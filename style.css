@@ -54,18 +54,7 @@ ul {
   justify-content: space-between;
   border-right: 1px solid var(--line);
 }
-.sidebar-bottom {
-  margin-top: 48px;
-}
 
-@media (max-width: 768px) {
-  .sidebar-bottom {
-    margin-top: 32px;
-  }
-  .nav {
-    margin-bottom: 24px;
-  }
-}
 .profile-photo-ring {
   position: relative;
   width: 88px;
@@ -331,6 +320,10 @@ h3 {
   transition: opacity 0.3s ease;
 }
 
+.contact-grid a.contact-link {
+  font-weight: 400;
+}
+
 .contact-grid .link-underline {
   text-decoration: underline;
 }
@@ -374,5 +367,9 @@ h3 {
 
   .hero-headline {
     font-size: 2rem;
+  }
+
+  .sidebar-bottom {
+    margin-top: 2rem;
   }
 }
