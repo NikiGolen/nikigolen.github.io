@@ -54,7 +54,18 @@ ul {
   justify-content: space-between;
   border-right: 1px solid var(--line);
 }
+.sidebar-bottom {
+  margin-top: 48px;
+}
 
+@media (max-width: 768px) {
+  .sidebar-bottom {
+    margin-top: 32px;
+  }
+  .nav {
+    margin-bottom: 24px;
+  }
+}
 .profile-photo-ring {
   position: relative;
   width: 88px;
