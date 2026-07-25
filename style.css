@@ -368,4 +368,14 @@ h3 {
   .sidebar-bottom {
     margin-top: 2rem;
   }
+  .job-highlights {
+  list-style: disc;
+  margin: 0.75rem 0 0 1.25rem;
+  padding: 0;
+}
+
+.job-highlights li {
+  margin-bottom: 0.5rem;
+  color: var(--ink-soft);
+}
 }
