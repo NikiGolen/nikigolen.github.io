@@ -74,19 +74,6 @@ ul {
   z-index: 0;
 }
 
-.profile-photo {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  border: 3px solid var(--bg);
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-}
-
 .name {
   font-family: var(--font-display);
   font-size: 1.5rem;
