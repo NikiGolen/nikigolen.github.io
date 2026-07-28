@@ -1,1 +1,73 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D SimLab Sandbox - Inpatient Hospital Room</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.1/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.1/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="experiment-header">
+          <span class="badge">LAB PROTOTYPE</span>
+        <h1>Interactive 3D SimLab Room Builder</h1>
+        <p>A Three.js application I built from scratch for planning clinical simulation spaces. It handles real-time 3D rendering, constraint-based equipment placement, wall-mounted vs. floor-standing object logic, camera-relative wall transparency, and a live bill-of-materials cart. No game engine, no framework, just vanilla JavaScript.</p>
+    </header>
+    <div class="builder-shell">
+      <div class="pn-main-grid-viewport">
+        <!-- Sidebar Element Window Drawer -->
+        <div class="sidebar">
+          <div class="sidebar-header">
+            <h2 id="sidebar-title">3D SimLab Equipment</h2>
+            <p id="sidebar-desc">Click item blocks to spawn inside the room</p>
+          </div>
+          <div class="dimension-control">
+            <label for="room-size-select">Baseline Layout Constraint:</label>
+            <select id="room-size-select">
+              <option value="small">Small Consultation Slot (~154 sq ft)</option>
+              <option value="medium" selected>Standard Training Footprint (~234 sq ft)</option>
+              <option value="large">Comprehensive Ward Suite (~330 sq ft)</option>
+            </select>
+          </div>
+          <div class="component-list" id="catalog-list"></div>
+        </div>
+        <!-- Layout -->
+        <div class="workspace-container">
+          <div class="toolbar">
+            <div class="room-title" id="active-room-title">Template Workspace: Medical-Surgical Ward Simulation</div>
+            <div class="stats-panel">
+              <div class="stat-badge">Scale Dims: <span id="footprint-dims">18ft x 13ft</span></div>
+              <div class="stat-badge">Calculated Area: <span id="footprint-area">234 sq ft</span></div>
+            </div>
+            <div class="nav-buttons">
+              <button class="toolbar-btn reset-btn" id="clear-workspace">Clear Grid</button>
+            </div>
+          </div>
+          <div class="canvas-container">
+            <div class="canvas" id="blueprint-canvas"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Portfolio Prototype • Built with HTML, CSS, JavaScript, Three.js, and structured catalog data.
+      </p>
+    </footer>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
