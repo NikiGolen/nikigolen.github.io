@@ -1,0 +1,1814 @@
+{
+  "intents": [
+    {
+      "name": "Compact / Small Space Office",
+      "keywords": [
+        {
+          "term": "small space",
+          "weight": 30
+        },
+        {
+          "term": "apartment",
+          "weight": 25
+        },
+        {
+          "term": "compact",
+          "weight": 20
+        },
+        {
+          "term": "small desk",
+          "weight": 20
+        },
+        {
+          "term": "minimal",
+          "weight": 10
+        }
+      ],
+      "preferredAttributes": {
+        "deskTypes": [
+          "Compact Desk",
+          "Small Space Desk"
+        ],
+        "features": [
+          "Cable Management"
+        ]
+      },
+      "categories": [
+        "Compact Desks",
+        "Small Space Desks"
+      ]
+    },
+    {
+      "name": "Ergonomic & Health-Focused",
+      "keywords": [
+        {
+          "term": "standing",
+          "weight": 35
+        },
+        {
+          "term": "sit stand",
+          "weight": 35
+        },
+        {
+          "term": "ergonomic",
+          "weight": 30
+        },
+        {
+          "term": "back pain",
+          "weight": 30
+        },
+        {
+          "term": "posture",
+          "weight": 20
+        }
+      ],
+      "preferredAttributes": {
+        "deskTypes": [
+          "Standing Desk",
+          "Electric Standing Desk"
+        ],
+        "features": [
+          "Dual Motor",
+          "Memory Presets"
+        ]
+      },
+      "categories": [
+        "Standing Desks",
+        "Adjustable Workstations"
+      ]
+    },
+    {
+      "name": "Executive & Luxury Office",
+      "keywords": [
+        {
+          "term": "executive",
+          "weight": 35
+        },
+        {
+          "term": "luxury",
+          "weight": 30
+        },
+        {
+          "term": "walnut",
+          "weight": 15
+        },
+        {
+          "term": "leather",
+          "weight": 20
+        },
+        {
+          "term": "professional",
+          "weight": 15
+        }
+      ],
+      "preferredAttributes": {
+        "styles": [
+          "Executive"
+        ],
+        "materials": [
+          "Walnut"
+        ]
+      },
+      "categories": [
+        "Executive Desks",
+        "Luxury Desks"
+      ]
+    },
+    {
+      "name": "Heavy Tech & Dual Monitor Setup",
+      "keywords": [
+        {
+          "term": "dual monitor",
+          "weight": 35
+        },
+        {
+          "term": "coding",
+          "weight": 25
+        },
+        {
+          "term": "developer",
+          "weight": 20
+        },
+        {
+          "term": "gaming",
+          "weight": 25
+        },
+        {
+          "term": "tech",
+          "weight": 15
+        }
+      ],
+      "preferredAttributes": {
+        "features": [
+          "Dual Monitor Support",
+          "Cable Management"
+        ]
+      },
+      "categories": [
+        "Gaming Desks",
+        "Tech Workstations"
+      ]
+    },
+    {
+      "name": "Modern Glass & Minimalist Office",
+      "keywords": [
+        {
+          "term": "glass",
+          "weight": 30
+        },
+        {
+          "term": "modern",
+          "weight": 20
+        },
+        {
+          "term": "minimalist",
+          "weight": 25
+        },
+        {
+          "term": "sleek",
+          "weight": 15
+        },
+        {
+          "term": "clean lines",
+          "weight": 15
+        }
+      ],
+      "preferredAttributes": {
+        "materials": [
+          "Glass"
+        ],
+        "styles": [
+          "Minimalist",
+          "Modern"
+        ]
+      },
+      "categories": [
+        "Glass Desks",
+        "Minimalist Desks"
+      ]
+    }
+  ],
+  "catalog": [
+    {
+      "id": "p01",
+      "name": "Electric Standing Desk",
+      "deskType": "Electric Standing Desk",
+      "material": "Steel",
+      "color": "Black",
+      "style": "Modern",
+      "features": [
+        "Electric Height Adjustable",
+        "Memory Presets",
+        "Cable Management",
+        "Dual Motor"
+      ],
+      "price": "$549",
+      "description": "Whisper-quiet dual-motor lift with four programmable height presets."
+    },
+    {
+      "id": "p02",
+      "name": "Walnut Executive Desk",
+      "deskType": "Executive Desk",
+      "material": "Walnut",
+      "color": "Dark Walnut",
+      "style": "Executive",
+      "features": [
+        "File Drawer",
+        "Cable Management"
+      ],
+      "price": "$899",
+      "description": "Solid walnut executive desk with a built-in file drawer and hidden cable routing."
+    },
+    {
+      "id": "p03",
+      "name": "Glass Top Writing Desk",
+      "deskType": "Writing Desk",
+      "material": "Glass",
+      "color": "Black",
+      "style": "Modern",
+      "features": [
+        "Cable Grommets"
+      ],
+      "price": "$379",
+      "description": "Tempered glass surface on a slim black frame for a light, open feel."
+    },
+    {
+      "id": "p04",
+      "name": "Frosted Glass Corner Desk",
+      "deskType": "Corner Desk",
+      "material": "Frosted Glass",
+      "color": "Silver",
+      "style": "Minimalist",
+      "features": [
+        "Cable Management"
+      ],
+      "price": "$429",
+      "description": "Frosted glass corner desk that fits neatly into small offices."
+    },
+    {
+      "id": "p05",
+      "name": "Compact Folding Desk",
+      "deskType": "Compact Desk",
+      "material": "MDF",
+      "color": "White",
+      "style": "Minimalist",
+      "features": [
+        "Foldable",
+        "Mobile"
+      ],
+      "price": "$149",
+      "description": "Folds flat and rolls away \u2014 built for tight apartments and dorms."
+    },
+    {
+      "id": "p06",
+      "name": "Small Space Writing Desk",
+      "deskType": "Small Space Desk",
+      "material": "Oak",
+      "color": "Natural Oak",
+      "style": "Scandinavian",
+      "features": [
+        "No Drawers"
+      ],
+      "price": "$199",
+      "description": "A slim-profile oak desk designed for small rooms and nooks."
+    },
+    {
+      "id": "p07",
+      "name": "L-Shaped Computer Desk",
+      "deskType": "L-Shaped Desk",
+      "material": "Particleboard",
+      "color": "Black",
+      "style": "Contemporary",
+      "features": [
+        "Cable Management",
+        "Monitor Shelf"
+      ],
+      "price": "$329",
+      "description": "Extra corner surface area for multi-monitor computer setups."
+    },
+    {
+      "id": "p08",
+      "name": "U-Shaped Executive Workstation",
+      "deskType": "U-Shaped Desk",
+      "material": "Walnut",
+      "color": "Espresso",
+      "style": "Executive",
+      "features": [
+        "File Drawer",
+        "Hidden Storage"
+      ],
+      "price": "$1199",
+      "description": "Wraparound executive workstation with generous hidden storage."
+    },
+    {
+      "id": "p09",
+      "name": "Industrial Corner Desk",
+      "deskType": "Corner Desk",
+      "material": "Iron",
+      "color": "Charcoal",
+      "style": "Industrial",
+      "features": [
+        "Open Shelves"
+      ],
+      "price": "$389",
+      "description": "Raw iron frame with open shelving for an industrial loft look."
+    },
+    {
+      "id": "p10",
+      "name": "Manual Standing Desk",
+      "deskType": "Manual Standing Desk",
+      "material": "Steel",
+      "color": "Gray",
+      "style": "Modern",
+      "features": [
+        "Manual Height Adjustable",
+        "Cable Management"
+      ],
+      "price": "$299",
+      "description": "Budget-friendly crank-adjustable standing desk."
+    },
+    {
+      "id": "p11",
+      "name": "Dual Motor Standing Desk Pro",
+      "deskType": "Electric Standing Desk",
+      "material": "Bamboo",
+      "color": "Natural Oak",
+      "style": "Scandinavian",
+      "features": [
+        "Electric Height Adjustable",
+        "Dual Motor",
+        "Memory Presets",
+        "Anti-Collision"
+      ],
+      "price": "$649",
+      "description": "Sustainable bamboo top with anti-collision sensors and dual-motor lift."
+    },
+    {
+      "id": "p12",
+      "name": "Gaming Battlestation Desk",
+      "deskType": "Gaming Desk",
+      "material": "Steel",
+      "color": "Matte Black",
+      "style": "Modern",
+      "features": [
+        "Cable Management",
+        "Monitor Arm Compatible",
+        "Dual Monitor Support",
+        "Power Outlets"
+      ],
+      "price": "$399",
+      "description": "Built-in power outlets and monitor arm mounts for dual-monitor gaming rigs."
+    },
+    {
+      "id": "p13",
+      "name": "Mid-Century Writing Desk",
+      "deskType": "Writing Desk",
+      "material": "Walnut",
+      "color": "Walnut",
+      "style": "Mid-Century Modern",
+      "features": [
+        "One Drawer"
+      ],
+      "price": "$349",
+      "description": "Tapered walnut legs and a single drawer, classic mid-century lines."
+    },
+    {
+      "id": "p14",
+      "name": "Floating Wall-Mounted Desk",
+      "deskType": "Floating Desk",
+      "material": "Oak",
+      "color": "White Oak",
+      "style": "Minimalist",
+      "features": [
+        "No Drawers"
+      ],
+      "price": "$179",
+      "description": "Wall-mounted floating desk that frees up floor space entirely."
+    },
+    {
+      "id": "p15",
+      "name": "Reclaimed Pine Rustic Desk",
+      "deskType": "Writing Desk",
+      "material": "Pine",
+      "color": "Rustic Brown",
+      "style": "Rustic",
+      "features": [
+        "Two Drawers"
+      ],
+      "price": "$459",
+      "description": "Weathered pine desk with two drawers for a warm, rustic office."
+    },
+    {
+      "id": "p16",
+      "name": "Scandinavian Compact Desk",
+      "deskType": "Compact Desk",
+      "material": "Birch",
+      "color": "Natural Oak",
+      "style": "Scandinavian",
+      "features": [
+        "Cable Grommets"
+      ],
+      "price": "$229",
+      "description": "Light birch compact desk with clean Scandinavian lines."
+    },
+    {
+      "id": "p17",
+      "name": "Executive Mahogany Desk",
+      "deskType": "Executive Desk",
+      "material": "Mahogany",
+      "color": "Espresso",
+      "style": "Luxury",
+      "features": [
+        "File Drawer",
+        "Locking Drawers"
+      ],
+      "price": "$1499",
+      "description": "Rich mahogany executive desk with locking file storage."
+    },
+    {
+      "id": "p18",
+      "name": "Adjustable Workstation Desk",
+      "deskType": "Adjustable Workstation",
+      "material": "Aluminum",
+      "color": "Silver",
+      "style": "Corporate",
+      "features": [
+        "Electric Height Adjustable",
+        "Cable Management",
+        "Power Outlets"
+      ],
+      "price": "$719",
+      "description": "Corporate-grade adjustable workstation for shared offices."
+    },
+    {
+      "id": "p19",
+      "name": "Secretary Desk with Hutch",
+      "deskType": "Secretary Desk",
+      "material": "Cherry",
+      "color": "Cherry",
+      "style": "Traditional",
+      "features": [
+        "Hutch",
+        "One Drawer"
+      ],
+      "price": "$599",
+      "description": "Traditional cherry secretary desk with an upper hutch for books."
+    },
+    {
+      "id": "p20",
+      "name": "Roll-Top Antique-Style Desk",
+      "deskType": "Roll-Top Desk",
+      "material": "Oak",
+      "color": "Honey Oak",
+      "style": "Vintage",
+      "features": [
+        "Cabinet",
+        "Pencil Drawer"
+      ],
+      "price": "$749",
+      "description": "Classic roll-top oak desk with a vintage antique finish."
+    },
+    {
+      "id": "p21",
+      "name": "Parsons Minimalist Desk",
+      "deskType": "Parsons Desk",
+      "material": "Laminate",
+      "color": "White",
+      "style": "Minimalist",
+      "features": [
+        "No Drawers"
+      ],
+      "price": "$179",
+      "description": "Clean-lined Parsons desk with a bright white laminate finish."
+    },
+    {
+      "id": "p22",
+      "name": "Marble-Top Luxury Desk",
+      "deskType": "Executive Desk",
+      "material": "Marble",
+      "color": "White",
+      "style": "Luxury",
+      "features": [
+        "File Drawer"
+      ],
+      "price": "$1899",
+      "description": "A statement marble-top executive desk for high-end offices."
+    },
+    {
+      "id": "p23",
+      "name": "Concrete Top Industrial Desk",
+      "deskType": "Workbench Desk",
+      "material": "Concrete",
+      "color": "Gray",
+      "style": "Industrial",
+      "features": [
+        "Open Shelves"
+      ],
+      "price": "$549",
+      "description": "Poured-concrete top workbench desk with exposed steel shelving."
+    },
+    {
+      "id": "p24",
+      "name": "Reception Desk Suite",
+      "deskType": "Reception Desk",
+      "material": "Laminate",
+      "color": "Charcoal",
+      "style": "Corporate",
+      "features": [
+        "Cable Management",
+        "Locking Drawers"
+      ],
+      "price": "$1299",
+      "description": "Front-office reception desk suite with secure locking storage."
+    },
+    {
+      "id": "p25",
+      "name": "Drafting Table Desk",
+      "deskType": "Drafting Desk",
+      "material": "Steel",
+      "color": "Black",
+      "style": "Industrial",
+      "features": [
+        "Manual Height Adjustable"
+      ],
+      "price": "$389",
+      "description": "Height-adjustable drafting desk built for architects and artists."
+    },
+    {
+      "id": "p26",
+      "name": "Corner Credenza Desk",
+      "deskType": "Credenza Desk",
+      "material": "Walnut",
+      "color": "Dark Walnut",
+      "style": "Executive",
+      "features": [
+        "Two Drawers",
+        "Cabinet"
+      ],
+      "price": "$999",
+      "description": "Low-profile walnut credenza desk with cabinet storage."
+    },
+    {
+      "id": "p27",
+      "name": "Student Study Desk",
+      "deskType": "Student Desk",
+      "material": "Pine",
+      "color": "Natural Oak",
+      "style": "Farmhouse",
+      "features": [
+        "One Drawer"
+      ],
+      "price": "$159",
+      "description": "Simple, sturdy pine study desk for students."
+    },
+    {
+      "id": "p29",
+      "name": "Modular Reconfigurable Workstation",
+      "deskType": "Benching Desk",
+      "material": "Laminate",
+      "color": "Charcoal",
+      "style": "Modern",
+      "features": [
+        "Modular",
+        "Cable Management",
+        "Privacy Panel"
+      ],
+      "price": "$679",
+      "description": "Expandable modular benching desk designed to reconfigure as your team grows."
+    },
+    {
+      "id": "p30",
+      "name": "Solid Oak Standing Desk",
+      "deskType": "Electric Standing Desk",
+      "material": "Oak",
+      "color": "Natural Oak",
+      "style": "Mid-Century Modern",
+      "features": [
+        "Electric Height Adjustable",
+        "Dual Motor",
+        "Memory Presets",
+        "Cable Grommets"
+      ],
+      "price": "$799",
+      "description": "Heavy-duty solid oak top paired with a smooth dual-motor electric lifting frame."
+    },
+    {
+      "id": "p31",
+      "name": "Glass Top L-Shaped Gaming Desk",
+      "deskType": "L-Shaped Desk",
+      "material": "Tempered Glass",
+      "color": "Black",
+      "style": "Modern",
+      "features": [
+        "Dual Monitor Support",
+        "Monitor Arm Compatible",
+        "Cable Management"
+      ],
+      "price": "$499",
+      "description": "Sleek black tempered glass L-shaped desk built for high-end multi-monitor battlestations."
+    },
+    {
+      "id": "p32",
+      "name": "Compact Minimalist Modular Desk",
+      "deskType": "Compact Desk",
+      "material": "MDF",
+      "color": "White",
+      "style": "Minimalist",
+      "features": [
+        "Modular",
+        "Foldable",
+        "Cable Management"
+      ],
+      "price": "$219",
+      "description": "Small-space friendly modular desk that can link up with additional units."
+    },
+    {
+      "id": "p33",
+      "name": "Industrial Reclaimed Wood Executive Desk",
+      "deskType": "Executive Desk",
+      "material": "Acacia",
+      "color": "Rustic Brown",
+      "style": "Industrial",
+      "features": [
+        "File Drawer",
+        "Locking Drawers",
+        "Open Shelves"
+      ],
+      "price": "$949",
+      "description": "Reclaimed acacia wood surface supported by heavy-gauge steel framing with locking storage."
+     },
+    {
+      "id": "p34",
+      "name": "Electric L-Shaped Standing Desk",
+      "deskType": "L-Shaped Desk",
+      "material": "Laminate",
+      "color": "Charcoal",
+      "style": "Modern",
+      "features": [
+        "Electric Height Adjustable",
+        "Sit-Stand",
+        "Memory Presets",
+        "Dual Monitor Support",
+        "Cable Management"
+      ],
+      "price": "$899",
+      "description": "Spacious motorized corner standing desk designed for heavy multi-monitor productivity workflows."
+    },
+    {
+      "id": "p35",
+      "name": "Executive Glass Top Desk",
+      "deskType": "Executive Desk",
+      "material": "Tempered Glass",
+      "color": "Smoked Glass",
+      "style": "Luxury",
+      "features": [
+        "File Drawer",
+        "Locking Drawers",
+        "Cable Grommets"
+      ],
+      "price": "$1299",
+      "description": "High-end executive desk featuring a smoked tempered glass top and built-in locking pedestal drawers."
+    },
+    {
+      "id": "p36",
+      "name": "Modular Wall-Mounted Floating Desk",
+      "deskType": "Wall-Mounted Desk",
+      "material": "Bamboo",
+      "color": "Natural Oak",
+      "style": "Minimalist",
+      "features": [
+        "Modular",
+        "Hidden Storage",
+        "Cable Management"
+      ],
+      "price": "$249",
+      "description": "Space-saving bamboo floating desk with hidden compartment storage that connects with modular add-ons."
+    },
+    {
+      "id": "p37",
+      "name": "Industrial Drafting Table with Storage",
+      "deskType": "Drafting Desk",
+      "material": "Iron",
+      "color": "Matte Black",
+      "style": "Industrial",
+      "features": [
+        "Manual Height Adjustable",
+        "Pencil Drawer",
+        "Open Shelves"
+      ],
+      "price": "$419",
+      "description": "Tilt-adjustable drawing surface with heavy iron framing and integrated open shelf storage."
+    },
+    {
+      "id": "p38",
+      "name": "Compact Japandi Corner Desk",
+      "deskType": "Corner Desk",
+      "material": "Ash",
+      "color": "Beige",
+      "style": "Japandi",
+      "features": [
+        "No Drawers",
+        "Cable Grommets"
+      ],
+      "price": "$319",
+      "description": "Warm ash wood corner desk blending Japanese minimalism with Scandinavian functionality."
+    },
+    {
+      "id": "p39",
+      "name": "Trestle Farmhouse Desk",
+      "deskType": "Trestle Desk",
+      "material": "Pine",
+      "color": "Weathered Oak",
+      "style": "Farmhouse",
+      "features": [
+        "No Drawers"
+      ],
+      "price": "$389",
+      "description": "Trestle-base farmhouse desk with a weathered oak finish."
+    },
+    {
+      "id": "p40",
+      "name": "Maple Student Study Desk",
+      "deskType": "Student Desk",
+      "material": "Maple",
+      "color": "Maple",
+      "style": "Transitional",
+      "features": [
+        "Keyboard Tray",
+        "Single Motor"
+      ],
+      "price": "$249",
+      "description": "Clean maple student desk equipped with a slide-out keyboard tray."
+    },
+    {
+      "id": "p41",
+      "name": "Coastal Glass & Plywood Executive Desk",
+      "deskType": "Executive Desk",
+      "material": "Plywood",
+      "color": "Driftwood",
+      "style": "Coastal",
+      "features": [
+        "Three Drawers",
+        "Wireless Charging",
+        "CPU Holder"
+      ],
+      "price": "$899",
+      "description": "Coastal-styled driftwood plywood desk featuring three drawers and built-in wireless charging."
+    },
+    {
+      "id": "p42",
+      "name": "Modular Call Center Shared Workstation",
+      "deskType": "Call Center Desk",
+      "material": "Melamine",
+      "color": "Ivory",
+      "style": "Retro",
+      "features": [
+        "Reversible Return",
+        "Left Return",
+        "Right Return"
+      ],
+      "price": "$450",
+      "description": "Flexible ivory melamine shared workstation with adjustable returns for tight call center layouts."
+    },
+    {
+      "id": "p43",
+      "name": "Art Deco Teacher's Bureau",
+      "deskType": "Teacher Desk",
+      "material": "Veneer",
+      "color": "Taupe",
+      "style": "Art Deco",
+      "features": [
+        "Locking Drawers",
+        "Cabinet"
+      ],
+      "price": "$620",
+      "description": "Elegant taupe wood veneer teacher's desk with vintage art deco curves and secure storage."
+    },
+    {
+      "id": "p44",
+      "name": "Ergonomic Sit-Stand Workstation",
+      "deskType": "Adjustable Workstation",
+      "material": "Aluminum",
+      "color": "Silver",
+      "style": "Modern",
+      "features": [
+        "Sit-Stand",
+        "Anti-Collision",
+        "Single Motor",
+        "Keyboard Tray"
+      ],
+      "price": "$480",
+      "description": "Compact sit-stand desk featuring a single-motor lift, anti-collision safety sensors, and a sliding keyboard tray."
+    },
+    {
+      "id": "p45",
+      "name": "Executive Tech Hub Desk",
+      "deskType": "Executive Desk",
+      "material": "Walnut",
+      "color": "Dark Walnut",
+      "style": "Executive",
+      "features": [
+        "Wireless Charging",
+        "CPU Holder",
+        "Reversible Return",
+        "Left Return",
+        "Right Return"
+      ],
+      "price": "$1150",
+      "description": "Premium walnut executive desk equipped with built-in wireless charging pads, an under-desk CPU holder, and configurable modular returns."
+    },
+    {
+      "id": "p46",
+      "name": "Bohemian Rattan Ladder Desk",
+      "deskType": "Ladder Desk",
+      "material": "Rubberwood",
+      "color": "Cream",
+      "style": "Bohemian",
+      "features": [
+        "Open Shelves",
+        "No Drawers"
+      ],
+      "price": "$340",
+      "description": "Airy cream rubberwood ladder desk featuring bohemian woven accents and open shelving tiers."
+    },
+    {
+      "id": "p47",
+      "name": "Coastal Slate Peninsula Cubicle Desk",
+      "deskType": "Cubicle Desk",
+      "material": "Slate",
+      "color": "Slate",
+      "style": "Coastal",
+      "features": [
+        "Privacy Panel",
+        "Cable Management"
+      ],
+      "price": "$780",
+      "description": "Sturdy slate-topped peninsula cubicle desk designed for coastal-inspired open-plan collaborative offices."
+    },
+    {
+      "id": "p48",
+      "name": "Modern Stainless Steel Office Hutch Desk",
+      "deskType": "Hutch Desk",
+      "material": "Stainless Steel",
+      "color": "Graphite",
+      "style": "Retro",
+      "features": [
+        "Hutch",
+        "Cabinet",
+        "Power Outlets"
+      ],
+      "price": "$920",
+      "description": "Sleek graphite stainless steel office desk with an integrated hutch and built-in power outlets."
+    },
+    {
+      "id": "p49",
+      "name": "Minimalist Acrylic Contemporary Desk",
+      "deskType": "Writing Desk",
+      "material": "Acrylic",
+      "color": "Matte White",
+      "style": "Contemporary",
+      "features": [
+        "Monitor Shelf",
+        "No Drawers"
+      ],
+      "price": "$310",
+      "description": "Sleek contemporary transparent acrylic desk in matte white featuring a raised monitor platform."
+    },
+    {
+      "id": "p50",
+      "name": "Natural Carbon Fiber Granite Executive Desk",
+      "deskType": "Executive Desk",
+      "material": "Granite",
+      "color": "Gray",
+      "style": "Contemporary",
+      "features": [
+        "Monitor Shelf",
+        "Locking Drawers"
+      ],
+      "price": "$1250",
+      "description": "Heavy-duty granite top executive desk with carbon fiber accents, secure locking storage, and a built-in monitor shelf."
+    },
+    {
+      "id": "p51",
+      "name": "Quartz Resin Studio Workspace",
+      "deskType": "Drafting Desk",
+      "material": "Quartz",
+      "color": "Sage",
+      "style": "Contemporary",
+      "features": [
+        "Monitor Shelf",
+        "Pencil Drawer"
+      ],
+      "price": "$640",
+      "description": "Durable sage quartz-resin drafting surface paired with contemporary lines and an integrated monitor shelf."
+    },
+    {
+      "id": "p52",
+      "name": "Art Deco Greige Velvet Trim Desk",
+      "deskType": "Office Desk",
+      "material": "Veneer",
+      "color": "Greige",
+      "style": "Art Deco",
+      "features": [
+        "Three Drawers",
+        "Mobile"
+      ],
+      "price": "$890",
+      "description": "Luxurious greige Art Deco office desk featuring brass inlays, three spacious drawers, and smooth-rolling casters."
+    },
+    {
+      "id": "p53",
+      "name": "Light Walnut Mobile Writing Station",
+      "deskType": "Peninsula Desk",
+      "material": "Rubberwood",
+      "color": "Light Walnut",
+      "style": "Art Deco",
+      "features": [
+        "Three Drawers",
+        "Mobile"
+      ],
+      "price": "$520",
+      "description": "Compact light walnut peninsula desk crafted in an Art Deco motif with mobile wheels and a triple-drawer setup."
+    },
+    {
+      "id": "p54",
+      "name": "Navy Blue Deco Executive Suite",
+      "deskType": "Cubicle Desk",
+      "material": "Resin",
+      "color": "Navy",
+      "style": "Art Deco",
+      "features": [
+        "Three Drawers",
+        "Mobile"
+      ],
+      "price": "$1120",
+      "description": "Bold navy blue resin-topped Art Deco desk equipped with heavy-duty mobile casters and a three-drawer storage block."
+    },
+    {
+      "id": "p55",
+      "name": "Forest Green Rustic Small Space Desk",
+      "deskType": "Small Space Desk",
+      "material": "Pine",
+      "color": "Forest Green",
+      "style": "Rustic",
+      "features": [
+        "Anti-Collision",
+        "One Drawer"
+      ],
+      "price": "$295",
+      "description": "Charming forest green rustic small space desk featuring built-in anti-collision safety mechanisms and a single drawer."
+    },
+    {
+      "id": "p56",
+      "name": "Olive Wood Anti-Collision Writing Nook",
+      "deskType": "Small Space Desk",
+      "material": "Birch",
+      "color": "Olive",
+      "style": "Rustic",
+      "features": [
+        "Anti-Collision",
+        "Pencil Drawer"
+      ],
+      "price": "$310",
+      "description": "Compact rustic olive-toned birch desk outfitted with a motorized anti-collision sensor and pencil drawer."
+    },
+    {
+      "id": "p57",
+      "name": "Dusty Blue Rustic Compact Workstation",
+      "deskType": "Small Space Desk",
+      "material": "Rubberwood",
+      "color": "Dusty Blue",
+      "style": "Rustic",
+      "features": [
+        "Anti-Collision",
+        "Cable Grommets"
+      ],
+      "price": "$340",
+      "description": "Weathered dusty blue rustic writing desk equipped with cable management grommets and anti-collision detection."
+    },
+    {
+      "id": "p58",
+      "name": "Multi-Tiered U-Shaped Executive Glass Suite",
+      "deskType": "U-Shaped Desk",
+      "material": "Glass",
+      "color": "Dark Walnut",
+      "style": "Traditional",
+      "features": [
+        "Dual Motor",
+        "Foldable",
+        "Hidden Storage",
+        "Manual Height Adjustable"
+      ],
+      "price": "$1350",
+      "description": "Expansive traditional U-shaped executive glass desk featuring dark walnut trim, dual motors, and hidden compartments."
+    },
+    {
+      "id": "p59",
+      "name": "Industrial Manual Standing Gaming Station",
+      "deskType": "Manual Standing Desk",
+      "material": "Iron",
+      "color": "Silver",
+      "style": "Vintage",
+      "features": [
+        "Monitor Arm Compatible",
+        "Dual Monitor Support",
+        "Power Outlets",
+        "Two Drawers"
+      ],
+      "price": "$620",
+      "description": "Vintage industrial hand-crank standing desk with silver iron legs, built-in power outlets, and dual monitor arms."
+    },
+    {
+      "id": "p60",
+      "name": "Luxury Floating Bamboo Secretary Bureau",
+      "deskType": "Floating Desk",
+      "material": "Bamboo",
+      "color": "Espresso",
+      "style": "Luxury",
+      "features": [
+        "Hutch",
+        "Modular",
+        "Privacy Panel",
+        "Sit-Stand"
+      ],
+      "price": "$780",
+      "description": "Espresso luxury floating secretary desk crafted from sustainable bamboo with a built-in hutch and modular privacy panel."
+    },
+    {
+      "id": "p61",
+      "name": "Corporate Roll-Top Workbench",
+      "deskType": "Roll-Top Desk",
+      "material": "Frosted Glass",
+      "color": "Gray",
+      "style": "Corporate",
+      "features": [
+        "Keyboard Tray",
+        "Single Motor",
+        "Wireless Charging",
+        "CPU Holder"
+      ],
+      "price": "$910",
+      "description": "Frosted glass corporate roll-top workbench in gray equipped with a motorized lift, keyboard tray, and wireless charging."
+    },
+    {
+      "id": "p62",
+      "name": "Mid-Century Parsons Credenza Desk",
+      "deskType": "Parsons Desk",
+      "material": "Particleboard",
+      "color": "Matte Black",
+      "style": "Mid-Century Modern",
+      "features": [
+        "Reversible Return",
+        "Left Return",
+        "Right Return",
+        "Anti-Collision"
+      ],
+      "price": "$450",
+      "description": "Matte black mid-century parsons credenza desk featuring particleboard build and multi-configurable returns."
+    },
+    {
+      "id": "p63",
+      "name": "Farmhouse Reception Bench",
+      "deskType": "Reception Desk",
+      "material": "Birch",
+      "color": "Walnut",
+      "style": "Farmhouse",
+      "features": [
+        "Dual Motor",
+        "Foldable",
+        "Hidden Storage",
+        "Manual Height Adjustable"
+      ],
+      "price": "$830",
+      "description": "Warm walnut farmhouse reception desk built with birch panels, dual motors, and fold-away capabilities."
+    },
+    {
+      "id": "p64",
+      "name": "Japandi Wall-Mounted Trestle Student Desk",
+      "deskType": "Student Desk",
+      "material": "Tempered Glass",
+      "color": "White Oak",
+      "style": "Japandi",
+      "features": [
+        "Monitor Arm Compatible",
+        "Dual Monitor Support",
+        "Power Outlets",
+        "Two Drawers"
+      ],
+      "price": "$390",
+      "description": "Minimalist white oak Japandi wall-mounted trestle student desk with tempered glass accents and power integration."
+    },
+    {
+      "id": "p65",
+      "name": "Coastal Call Center Benching Hub",
+      "deskType": "Call Center Desk",
+      "material": "Aluminum",
+      "color": "Rustic Brown",
+      "style": "Coastal",
+      "features": [
+        "Hutch",
+        "Modular",
+        "Privacy Panel",
+        "Sit-Stand"
+      ],
+      "price": "$550",
+      "description": "Rustic brown coastal call center benching hub featuring aluminum framing, a modular layout, and sit-stand capabilities."
+    },
+    {
+      "id": "p66",
+      "name": "Retro Bohemian Ladder Cubicle Hutch",
+      "deskType": "Ladder Desk",
+      "material": "Mahogany",
+      "color": "Cherry",
+      "style": "Bohemian",
+      "features": [
+        "Keyboard Tray",
+        "Single Motor",
+        "Wireless Charging",
+        "CPU Holder"
+      ],
+      "price": "$690",
+      "description": "Mahogany-rich retro bohemian ladder cubicle desk finished in cherry red with built-in wireless tech hubs."
+    },
+    {
+      "id": "p67",
+      "name": "Transitional Office Peninsula Desk",
+      "deskType": "Office Desk",
+      "material": "Marble",
+      "color": "Honey Oak",
+      "style": "Transitional",
+      "features": [
+        "Reversible Return",
+        "Left Return",
+        "Right Return",
+        "Anti-Collision"
+      ],
+      "price": "$890",
+      "description": "Honey oak transitional office peninsula desk featuring a luxurious marble inlay surface and safety anti-collision motors."
+    },
+    {
+      "id": "p68",
+      "name": "Scandinavian Concrete Studio Desk",
+      "deskType": "Adjustable Workstation",
+      "material": "Concrete",
+      "color": "Beige",
+      "style": "Scandinavian",
+      "features": [
+        "Dual Motor",
+        "Foldable",
+        "Hidden Storage",
+        "Manual Height Adjustable"
+      ],
+      "price": "$670",
+      "description": "Beige Scandinavian concrete adjustable workstation with foldable joints and hidden storage compartments."
+    },
+    {
+      "id": "p69",
+      "name": "Luxury Mahogany Executive Archive Desk",
+      "deskType": "Credenza Desk",
+      "material": "Mahogany",
+      "color": "Weathered Oak",
+      "style": "Luxury",
+      "features": [
+        "Monitor Arm Compatible",
+        "Dual Monitor Support",
+        "Power Outlets",
+        "Two Drawers"
+      ],
+      "price": "$1200",
+      "description": "Weathered oak luxury mahogany credenza desk outfitted with double drawer storage and integrated power outlets."
+    },
+    {
+      "id": "p70",
+      "name": "Traditional Cherry Teacher's Nook",
+      "deskType": "Teacher Desk",
+      "material": "Cherry",
+      "color": "Maple",
+      "style": "Traditional",
+      "features": [
+        "Hutch",
+        "Modular",
+        "Privacy Panel",
+        "Sit-Stand"
+      ],
+      "price": "$540",
+      "description": "Maple-finished traditional cherry teacher desk featuring an attached hutch and flexible sit-stand framework."
+    },
+    {
+      "id": "p71",
+      "name": "Industrial Smoked Glass Workbench",
+      "deskType": "Workbench Desk",
+      "material": "Smoked Glass",
+      "color": "Driftwood",
+      "style": "Industrial",
+      "features": [
+        "Keyboard Tray",
+        "Single Motor",
+        "Wireless Charging",
+        "CPU Holder"
+      ],
+      "price": "$720",
+      "description": "Driftwood-styled industrial workbench with a smoked glass top, single-motor adjustment, and under-desk CPU holder."
+    },
+    {
+      "id": "p72",
+      "name": "Minimalist Acacia Writing Bureau",
+      "deskType": "Writing Desk",
+      "material": "Acacia",
+      "color": "Ivory",
+      "style": "Minimalist",
+      "features": [
+        "Reversible Return",
+        "Left Return",
+        "Right Return",
+        "Anti-Collision"
+      ],
+      "price": "$410",
+      "description": "Ivory minimalist acacia writing bureau designed with anti-collision sensors and customizable modular returns."
+    },
+    {
+      "id": "p73",
+      "name": "Vintage Ash Secretary Station",
+      "deskType": "Secretary Desk",
+      "material": "Ash",
+      "color": "Taupe",
+      "style": "Vintage",
+      "features": [
+        "Dual Motor",
+        "Foldable",
+        "Hidden Storage",
+        "Manual Height Adjustable"
+      ],
+      "price": "$580",
+      "description": "Taupe vintage ash secretary desk featuring fold-away convenience, dual motors, and hidden cubby storage."
+    },
+    {
+      "id": "p74",
+      "name": "Mid-Century Plywood Drafting Table",
+      "deskType": "Drafting Desk",
+      "material": "Plywood",
+      "color": "Cream",
+      "style": "Mid-Century Modern",
+      "features": [
+        "Monitor Arm Compatible",
+        "Dual Monitor Support",
+        "Power Outlets",
+        "Two Drawers"
+      ],
+      "price": "$490",
+      "description": "Cream mid-century plywood drafting table equipped with two storage drawers and built-in power outlets."
+    },
+    {
+      "id": "p75",
+      "name": "Farmhouse Melamine Benching Unit",
+      "deskType": "Benching Desk",
+      "material": "Melamine",
+      "color": "Slate",
+      "style": "Farmhouse",
+      "features": [
+        "Hutch",
+        "Modular",
+        "Privacy Panel",
+        "Sit-Stand"
+      ],
+      "price": "$610",
+      "description": "Slate farmhouse melamine benching unit built with a modular privacy panel layout and sit-stand functionality."
+    },
+    {
+      "id": "p76",
+      "name": "Coastal Veneer Wall-Mounted Console",
+      "deskType": "Wall-Mounted Desk",
+      "material": "Veneer",
+      "color": "Graphite",
+      "style": "Coastal",
+      "features": [
+        "Keyboard Tray",
+        "Single Motor",
+        "Wireless Charging",
+        "CPU Holder"
+      ],
+      "price": "$330",
+      "description": "Graphite coastal veneer wall-mounted console incorporating a drop-down keyboard tray and wireless charging pad."
+    },
+    {
+      "id": "p77",
+      "name": "Corporate Rubberwood Trestle Desk",
+      "deskType": "Trestle Desk",
+      "material": "Rubberwood",
+      "color": "Matte White",
+      "style": "Corporate",
+      "features": [
+        "Reversible Return",
+        "Left Return",
+        "Right Return",
+        "Anti-Collision"
+      ],
+      "price": "$520",
+      "description": "Matte white corporate rubberwood trestle desk featuring safety anti-collision tracks and modular returns."
+    },
+    {
+      "id": "p78",
+      "name": "Luxury Slate Executive Cubicle",
+      "deskType": "Cubicle Desk",
+      "material": "Slate",
+      "color": "Sage",
+      "style": "Luxury",
+      "features": [
+        "Dual Motor",
+        "Foldable",
+        "Hidden Storage",
+        "Manual Height Adjustable"
+      ],
+      "price": "$950",
+      "description": "Sage luxury slate executive cubicle designed with hidden storage cavities and smooth folding mechanisms."
+    },
+    {
+      "id": "p79",
+      "name": "Industrial Stainless Steel Hutch Desk",
+      "deskType": "Hutch Desk",
+      "material": "Stainless Steel",
+      "color": "Greige",
+      "style": "Industrial",
+      "features": [
+        "Monitor Arm Compatible",
+        "Dual Monitor Support",
+        "Power Outlets",
+        "Two Drawers"
+      ],
+      "price": "$840",
+      "description": "Greige industrial stainless steel hutch desk featuring double drawers and dedicated power connectivity ports."
+    },
+    {
+      "id": "p80",
+      "name": "Scandinavian Acrylic Writing Nook",
+      "deskType": "Writing Desk",
+      "material": "Acrylic",
+      "color": "Light Walnut",
+      "style": "Scandinavian",
+      "features": [
+        "Hutch",
+        "Modular",
+        "Privacy Panel",
+        "Sit-Stand"
+      ],
+      "price": "$460",
+      "description": "Light walnut Scandinavian acrylic writing desk featuring a modular privacy shield and adjustable sit-stand height."
+    },
+    {
+      "id": "p81",
+      "name": "Mid-Century Quartz Studio Station",
+      "deskType": "Drafting Desk",
+      "material": "Quartz",
+      "color": "Navy",
+      "style": "Mid-Century Modern",
+      "features": [
+        "Keyboard Tray",
+        "Single Motor",
+        "Wireless Charging",
+        "CPU Holder"
+      ],
+      "price": "$890",
+      "description": "Navy blue mid-century quartz drafting table equipped with wireless charging capability and a motorized lift."
+    },
+    {
+      "id": "p82",
+      "name": "Luxury Granite Executive Desk",
+      "deskType": "Executive Desk",
+      "material": "Granite",
+      "color": "Forest Green",
+      "style": "Luxury",
+      "features": [
+        "Reversible Return",
+        "Left Return",
+        "Right Return",
+        "Anti-Collision"
+      ],
+      "price": "$1450",
+      "description": "Forest green luxury granite executive desk featuring anti-collision lift columns and modular configurable returns."
+    },
+    {
+      "id": "p83",
+      "name": "Traditional Resin Secretary Bureau",
+      "deskType": "Secretary Desk",
+      "material": "Resin",
+      "color": "Olive",
+      "style": "Traditional",
+      "features": [
+        "Monitor Arm Compatible",
+        "Dual Monitor Support",
+        "Power Outlets",
+        "Two Drawers"
+      ],
+      "price": "$610",
+      "description": "Olive resin traditional secretary bureau outfitted with dual monitor support and integrated power outlets."
+    },
+    {
+      "id": "p84",
+      "name": "Contemporary Carbon Fiber Workstation",
+      "deskType": "Adjustable Workstation",
+      "material": "MDF",
+      "color": "Dusty Blue",
+      "style": "Contemporary",
+      "features": [
+        "Hutch",
+        "Modular",
+        "Privacy Panel",
+        "Sit-Stand"
+      ],
+      "price": "$530",
+      "description": "Dusty blue contemporary MDF adjustable workstation featuring carbon fiber visual styling and a sit-stand frame."
+    },
+    {
+      "id": "p85",
+      "name": "Classic Peninsula Mahogany Student Suite",
+      "deskType": "Peninsula Desk",
+      "material": "Mahogany",
+      "color": "Espresso",
+      "style": "Vintage",
+      "features": [
+        "Cable Management",
+        "File Drawer",
+        "Locking Drawers"
+      ],
+      "price": "$740",
+      "description": "Espresso vintage peninsula desk crafted from rich mahogany with secure locking file drawers and cable management."
+    },
+    {
+      "id": "p86",
+      "name": "Compact Japandi Glass Corner Workstation",
+      "deskType": "Corner Desk",
+      "material": "Glass",
+      "color": "Matte Black",
+      "style": "Japandi",
+      "features": [
+        "Cable Management",
+        "File Drawer",
+        "Locking Drawers"
+      ],
+      "price": "$510",
+      "description": "Matte black Japandi compact corner desk featuring a tempered glass top, cable routing, and locking storage."
+    },
+    {
+      "id": "p87",
+      "name": "Transitional Frosted Glass L-Shaped Hub",
+      "deskType": "L-Shaped Desk",
+      "material": "Frosted Glass",
+      "color": "Walnut",
+      "style": "Transitional",
+      "features": [
+        "Cable Management",
+        "File Drawer",
+        "Locking Drawers"
+      ],
+      "price": "$890",
+      "description": "Walnut transitional L-shaped desk outfitted with frosted glass modesty panels and secure file drawers."
+    },
+    {
+      "id": "p88",
+      "name": "Retro Particleboard Roll-Top Nook",
+      "deskType": "Roll-Top Desk",
+      "material": "Particleboard",
+      "color": "White Oak",
+      "style": "Retro",
+      "features": [
+        "Cable Management",
+        "File Drawer",
+        "Locking Drawers"
+      ],
+      "price": "$430",
+      "description": "White oak retro particleboard roll-top desk equipped with built-in cable management and locking drawers."
+    },
+    {
+      "id": "p89",
+      "name": "Cherry Bohemian Cherry Study Nook",
+      "deskType": "Student Desk",
+      "material": "Cherry",
+      "color": "Cherry",
+      "style": "Bohemian",
+      "features": [
+        "Cable Management",
+        "File Drawer",
+        "Locking Drawers"
+      ],
+      "price": "$480",
+      "description": "Bohemian cherry student desk featuring matching cherry wood tones, built-in cable management, and locking file drawers."
+    },
+    {
+      "id": "p90",
+      "name": "Weathered Oak Honey Oak Writing Station",
+      "deskType": "Writing Desk",
+      "material": "Oak",
+      "color": "Honey Oak",
+      "style": "Rustic",
+      "features": [
+        "Cable Management",
+        "File Drawer",
+        "Locking Drawers"
+      ],
+      "price": "$450",
+      "description": "Honey oak rustic writing desk crafted from solid oak with weather-resistant coating, cable slots, and secure drawers."
+    },
+    {
+      "id": "p91",
+      "name": "Beige Concrete Drafting Table",
+      "deskType": "Drafting Desk",
+      "material": "Concrete",
+      "color": "Beige",
+      "style": "Contemporary",
+      "features": [
+        "Cable Management",
+        "File Drawer",
+        "Locking Drawers"
+      ],
+      "price": "$620",
+      "description": "Beige contemporary concrete drafting table outfitted with a heavy-duty surface, cable management, and locking drawers."
+    },
+    {
+      "id": "p92",
+      "name": "Weathered Oak Rustic Archive Hutch",
+      "deskType": "Workbench Desk",
+      "material": "Pine",
+      "color": "Weathered Oak",
+      "style": "Farmhouse",
+      "features": [
+        "Cable Management",
+        "File Drawer",
+        "Locking Drawers"
+      ],
+      "price": "$590",
+      "description": "Weathered oak farmhouse workbench built with pine wood, integrated cable routing channels, and secure locking file storage."
+    },
+  {
+    "id": "p93",
+    "name": "Maple U-Shaped Executive Workstation",
+    "deskType": "U-Shaped Desk",
+    "material": "Maple",
+    "color": "Maple",
+    "style": "Modern",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$950",
+    "description": "Maple U-shaped executive desk with built-in cable management, file drawers, and secure locking storage."
+  },
+  {
+    "id": "p94",
+    "name": "Driftwood Manual Standing Desk",
+    "deskType": "Manual Standing Desk",
+    "material": "Plywood",
+    "color": "Driftwood",
+    "style": "Industrial",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$610",
+    "description": "Driftwood manual standing desk featuring an industrial steel crank mechanism, cable routing, and locking drawers."
+  },
+  {
+    "id": "p95",
+    "name": "Ivory Gaming Battle Station",
+    "deskType": "Gaming Desk",
+    "material": "Melamine",
+    "color": "Ivory",
+    "style": "Minimalist",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$530",
+    "description": "Ivory minimalist gaming desk equipped with surface cable management slots, file storage, and secure drawers."
+  },
+  {
+    "id": "p96",
+    "name": "Taupe Floating Wall Desk",
+    "deskType": "Floating Desk",
+    "material": "Acrylic",
+    "color": "Taupe",
+    "style": "Contemporary",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$420",
+    "description": "Taupe contemporary floating desk designed for modern spaces with integrated cable management and locking compartments."
+  },
+  {
+    "id": "p97",
+    "name": "Cream Parsons Marble Workstation",
+    "deskType": "Parsons Desk",
+    "material": "Marble",
+    "color": "Cream",
+    "style": "Modern",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$590",
+    "description": "Cream Parsons desk with a marble surface, integrated cable routing, and secure locking file drawers."
+  },
+  {
+    "id": "p98",
+    "name": "Slate Reception Welcome Desk",
+    "deskType": "Reception Desk",
+    "material": "Slate",
+    "color": "Slate",
+    "style": "Corporate",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$810",
+    "description": "Slate reception desk built for professional offices with hidden cable management and locking compartments."
+  },
+  {
+    "id": "p99",
+    "name": "Graphite Credenza Executive Suite",
+    "deskType": "Credenza Desk",
+    "material": "Stainless Steel",
+    "color": "Graphite",
+    "style": "Executive",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$1050",
+    "description": "Graphite credenza desk featuring stainless steel accents, organized cable pathways, and locking storage."
+  },
+  {
+    "id": "p100",
+    "name": "Matte White Benching Hub",
+    "deskType": "Benching Desk",
+    "material": "Melamine",
+    "color": "Matte White",
+    "style": "Minimalist",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$680",
+    "description": "Matte white benching workstation designed with melamine surfaces, integrated cable slots, and secure drawers."
+  },
+  {
+    "id": "p101",
+    "name": "Sage Smoked Glass Wall-Mounted Nook",
+    "deskType": "Wall-Mounted Desk",
+    "material": "Smoked Glass",
+    "color": "Sage",
+    "style": "Contemporary",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$380",
+    "description": "Sage smoked glass wall-mounted desk featuring modern styling, cable management, and secure locking drawers."
+  },
+  {
+    "id": "p102",
+    "name": "Greige Acacia Trestle Station",
+    "deskType": "Trestle Desk",
+    "material": "Acacia",
+    "color": "Greige",
+    "style": "Industrial",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$510",
+    "description": "Greige industrial trestle desk built from solid acacia wood with integrated cable routing and locking file storage."
+  },
+  {
+    "id": "p103",
+    "name": "Light Walnut Ash Call Center Hub",
+    "deskType": "Call Center Desk",
+    "material": "Ash",
+    "color": "Light Walnut",
+    "style": "Modern",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$640",
+    "description": "Light walnut call center desk crafted from premium ash with organized cable management and secure drawers."
+  },
+  {
+    "id": "p104",
+    "name": "Navy Granite Teacher's Desk",
+    "deskType": "Teacher Desk",
+    "material": "Granite",
+    "color": "Navy",
+    "style": "Traditional",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$890",
+    "description": "Navy traditional teacher desk topped with solid granite, featuring built-in cable paths and secure locking drawers."
+  },
+  {
+    "id": "p105",
+    "name": "Olive Quartz Electric Standing Workstation",
+    "deskType": "Electric Standing Desk",
+    "material": "Quartz",
+    "color": "Olive",
+    "style": "Modern",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$920",
+    "description": "Olive electric standing desk featuring a durable quartz surface, integrated cable management, and locking file drawers."
+  },
+  {
+    "id": "p106",
+    "name": "Dusty Blue Aluminum Compact Nook",
+    "deskType": "Compact Desk",
+    "material": "Aluminum",
+    "color": "Dusty Blue",
+    "style": "Minimalist",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$410",
+    "description": "Dusty blue compact desk built with lightweight aluminum framing, built-in cable routing, and secure drawer storage."
+  },
+  {
+    "id": "p107",
+    "name": "Olive MDF Ladder Studio",
+    "deskType": "Ladder Desk",
+    "material": "MDF",
+    "color": "Olive",
+    "style": "Industrial",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$370",
+    "description": "Olive industrial ladder desk constructed from sturdy MDF with integrated cable channels and secure locking storage."
+  },
+  {
+    "id": "p108",
+    "name": "Dusty Blue Quartz Cubicle Hub",
+    "deskType": "Cubicle Desk",
+    "material": "Quartz",
+    "color": "Dusty Blue",
+    "style": "Corporate",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$780",
+    "description": "Dusty blue corporate cubicle desk outfitted with a quartz countertop, cable management slots, and locking drawers."
+  },
+  {
+    "id": "p109",
+    "name": "Olive Aluminum Hutch Station",
+    "deskType": "Hutch Desk",
+    "material": "Aluminum",
+    "color": "Olive",
+    "style": "Traditional",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$830",
+    "description": "Olive traditional hutch desk framed in lightweight aluminum, complete with cable organization and secure file drawers."
+  },
+  {
+    "id": "p110",
+    "name": "Dusty Blue MDF Office Desk",
+    "deskType": "Office Desk",
+    "material": "MDF",
+    "color": "Dusty Blue",
+    "style": "Mid-Century Modern",
+    "features": [
+      "Cable Management",
+      "File Drawer",
+      "Locking Drawers"
+    ],
+    "price": "$650",
+    "description": "Dusty blue mid-century modern office desk built with durable MDF panels, organized cable management, and locking storage."
+      }
+
+  ]
+
+} 
