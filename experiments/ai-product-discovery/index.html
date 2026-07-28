@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Product Discovery Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Header -->
+
+    <header>
+
+        <span class="badge">
+            LAB PROTOTYPE
+        </span>
+
+        <h1>
+            AI Product Discovery
+        </h1>
+
+        <p class="intro">
+            Exploring how natural language understanding,
+            product taxonomy, explainable AI, and intelligent
+            product recommendations can improve ecommerce
+            product discovery.
+        </p>
+
+        <p class="scope-note">
+            Scoped to desktop for this prototype.
+        </p>
+
+    </header>
+
+
+
+<!-- Problem -->
+
+    <section class="info-card">
+
+        <h2>Problem</h2>
+
+        <p>
+            Traditional e-commerce search relies on rigid keyword matching, forcing customers to use exact product names rather than describing what they actually want to achieve. This often leads to poor results when complex preferences or negative constraints are applied.
+        </p>
+
+      <p>
+            This prototype explores how natural language understanding, dynamic product taxonomy, multi-attribute intent scoring, and explainable AI can transform e-commerce discovery specifically for <strong style="color: #0f172a; font-weight: 800;">office desks</strong>. By parsing conversational queries into weighted match percentages and transparent reasoning, the interface bridges the gap between user intent and structured catalog data.
+        </p>
+
+        <div class="tech-badge">
+            BUILT WITH: VANILLA JS, LOCAL JSON, INTENT SCORING, CLOUDFLARE WORKERS, &amp; GOOGLE GEMINI API
+        </div>
+
+    </section>
+    
+<!-- Workspace -->
+
+    <div class="workspace">
+
+    <div class="workspace-left">
+
+<!-- Search -->
+
+    <section class="search-section">
+
+        <label>
+
+            Describe the desk you're looking for
+
+        </label>
+
+        <textarea
+            id="userInput"
+            placeholder="Example: I'm looking for a walnut standing desk with cable management."
+        ></textarea>
+
+        <button id="analyzeButton">
+
+            Analyze Request
+
+        </button>
+
+        <div id="thinkingIndicator" class="thinking-indicator hidden">
+            AI is analyzing your request<span class="thinking-dots"></span>
+        </div>
+
+    </section>
+
+
+
+<!-- Sample Prompts -->
+
+    <section class="sample-prompts">
+
+        <h3>Try one of these</h3>
+
+        <div class="prompt-container">
+
+            <button class="prompt">
+                Glass top writing desk
+            </button>
+
+            <button class="prompt">
+                Walnut standing desk with cable management
+            </button>
+
+            <button class="prompt">
+                Gaming battlestation desk for dual monitors
+            </button>
+
+            <button class="prompt">
+                Bamboo top Scandinavian desk
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+<!-- Filters -->
+
+    <section class="filter-card">
+
+        <h2>Filters</h2>
+
+        <p class="filter-hint">
+            Narrow or steer results manually — works with or
+            without a typed request.
+        </p>
+
+        <div id="filterOutput" class="filter-panel">
+        </div>
+
+    </section>
+
+    </div> 
+
+
+
+    <div class="workspace-right">
+
+<!-- Detected Attributes -->
+
+    <section
+        id="attributeCard"
+        class="result-card hidden">
+
+        <h2>
+
+            Detected Attributes
+
+        </h2>
+
+        <p class="chip-hint">Remove a chip to refine results without retyping.</p>
+
+        <div
+            id="attributeOutput"
+            class="attribute-container">
+
+        </div>
+
+    </section>
+
+
+
+<!-- Intent Graph -->
+
+    <section
+        id="graphCard"
+        class="result-card hidden">
+
+        <h2>
+
+            Intent Graph
+
+        </h2>
+
+        <div id="graphOutput" class="intent-graph">
+
+        </div>
+
+    </section>
+
+
+
+<!-- AI Analysis -->
+
+    <section
+        id="reasoningCard"
+        class="result-card hidden">
+
+        <h2>
+
+            AI Analysis
+
+        </h2>
+
+        <div id="reasoningOutput">
+
+        </div>
+
+    </section>
+
+
+
+ <!-- Categories -->
+
+    <section
+        id="categoryCard"
+        class="result-card hidden">
+
+        <h2>
+
+            Recommended Categories
+
+        </h2>
+
+        <div
+            id="categoryOutput"
+            class="chip-container">
+
+        </div>
+
+    </section>
+
+
+
+<!-- Products -->
+
+    <section
+        id="productCard"
+        class="result-card hidden">
+
+        <h2>
+
+            Suggested Products
+
+        </h2>
+
+        <div id="productOutput">
+
+        </div>
+
+    </section>
+
+
+
+ <!-- Recommendation Summary -->
+
+    <section
+        id="explanationCard"
+        class="result-card hidden">
+
+        <h2>
+
+            Recommendation Summary
+
+        </h2>
+
+        <div id="explanationOutput">
+
+        </div>
+
+    </section>
+
+    </div> 
+
+    </div> <!-- /workspace -->
+
+
+
+<!-- Footer -->
+<footer>
+    <p>
+        Portfolio Prototype • Built with Vanilla JS, Local JSON, Intent Scoring, Cloudflare Workers, and the Google Gemini API.
+    </p>
+</footer>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
