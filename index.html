@@ -509,11 +509,11 @@
       <h3 class="project-title">Interactive 3D SimLab Room Builder</h3>
 
       <p class="project-desc">
-        A browser-based workspace for designing clinical simulation environments in real-time 3D.
+        A Three.js workspace for laying out clinical simulation rooms in real time.
       </p>
 
       <p class="project-desc">
-        This experiment explores procedural 3D rendering, constraint-based equipment placement, dynamic room visualization, and interactive planning workflows built entirely with Three.js and vanilla JavaScript.
+        Built entirely with vanilla JavaScript and Three.js, no game engine or framework. It handles constraint-based equipment placement, wall-mounted vs. floor-standing logic, camera-relative wall transparency, and a live bill-of-materials cart as you build.
       </p>
 
       <p class="project-stack">
@@ -535,15 +535,15 @@
       <h3 class="project-title">AI Product Discovery Lab </h3>
 
       <p class="project-desc">
-        An interactive prototype exploring how AI can transform ecommerce search into personalized product discovery experiences.
+        An ecommerce search prototype that parses what someone actually wants, not just the keywords they typed.
       </p>
 
       <p class="project-desc">
-        This experiment is a simulated AI commerce environment demonstrating conversational discovery, intelligent recommendations, product comparison workflows, search optimization, and future-state digital shopping experiences.
+        Conversational queries get scored into weighted match percentages with the reasoning shown alongside each result, backed by a Cloudflare Workers endpoint calling the Google Gemini API.
       </p>
 
       <p class="project-stack">
-        AI Commerce · Product Discovery · Search Strategy · JavaScript
+        Natural Language Search · Intent Scoring · Google Gemini API · Cloudflare Workers
       </p>
 
       <a href="https://nikigolen.github.io/experiments/ai-product-discovery/" 
@@ -561,11 +561,11 @@
         <h3 class="project-title">Technical Program Management Studio</h3>
 
       <p class="project-desc">
-        An interactive workspace for exploring how technical programs are planned, structured, and executed.
+        A single dashboard framework, reused across twelve hypothetical technical programs.
       </p>
 
       <p class="project-desc">
-        This experiment is a simulated enterprise program management environment demonstrating technical strategy, architecture planning, cross-functional alignment, dependency management, risk mitigation, and execution tracking.
+        Switch the initiative and the architecture diagram, risk matrix, and roadmap all update from that program's own data — including a composite risk score computed from real probability × impact weighting, not a flat placeholder.
       </p>
 
       <p class="project-stack">
@@ -587,11 +587,11 @@
         <h3 class="project-title">Query-Time Schema Fallback (QSF)</h3>
 
       <p class="project-desc">
-        A middleware prototype exploring resilient search by recovering missing product attributes during query execution.
+        A middleware prototype for recovering missing product attributes at query time instead of just dropping them.
       </p>
 
       <p class="project-desc">
-        This experiment demonstrates how an intermediate query layer compensates for incomplete catalog schemas using runtime attribute inference, fallback resolution, and semantic filtering instead of relying solely on upstream feed validation.
+        When a boolean flag like isWireless comes back null, QSF falls back to tags like #corded or #wired to resolve it, and traces every step of that decision live instead of burying it in a console log.
       </p>
 
       <p class="project-stack">
