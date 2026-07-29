@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Charging Pad",
+        "category": "accessory",
+        "isWireless": true,
+        "tags": ["charging", "qi"]
+    },
+    {
+        "id": 2,
+        "name": "USB-C Mechanical Keyboard",
+        "category": "peripherals",
+        "isWireless": false,
+        "tags": ["desk", "wired"]
+    },
+    {
+        "id": 3,
+        "name": "Ergonomic Bluetooth Mouse",
+        "category": "peripherals",
+        "isWireless": true,
+        "tags": ["desk", "bluetooth"]
+    },
+    {
+        "id": 4,
+        "name": "Wired Gaming Headset",
+        "category": "audio",
+        "isWireless": false,
+        "tags": ["gaming", "wired"]
+    },
+    {
+        "id": 5,
+        "name": "Office Desk Power Strip",
+        "category": "accessory",
+        "isWireless": null, 
+        "tags": ["power", "corded", "wired"]
+    }
+]
