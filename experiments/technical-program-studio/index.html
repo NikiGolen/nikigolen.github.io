@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technical Program Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span class="logo-mark">TPS</span>
+            <div>
+                <h2>Program Studio</h2>
+                <p>Technical Program Manager Portfolio</p>
+            </div>
+        </div>
+
+        <div class="program-selector">
+
+            <label for="programSelect">Select Initiative</label>
+
+            <select id="programSelect">
+                <option value="search">AI Search Platform</option>
+                <option value="global">Global Ecommerce Expansion</option>
+                <option value="recommendation">Recommendation Engine</option>
+                <option value="identity">Identity &amp; Authentication</option>
+                <option value="privacy">Privacy Compliance Framework</option>
+                <option value="payments">Payment Modernization</option>
+                <option value="inventory">Inventory Synchronization</option>
+                <option value="warehouse">Data Warehouse Migration</option>
+                <option value="mobile">Mobile Commerce App</option>
+                <option value="support">AI Customer Support</option>
+                <option value="personalization">Personalization Platform</option>
+                <option value="api">API Platform</option>
+            </select>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <h3>Program Status</h3>
+
+            <div class="status-card">
+                <span class="status-dot" id="statusDot"></span>
+                <div>
+                    <strong id="statusLabel">Planning</strong>
+                    <p id="statusDescription">Discovery &amp; Planning Phase</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <h3>Quick Metrics</h3>
+
+            <div class="metric-mini">
+                <span>Duration</span>
+                <strong id="durationMini">28 Weeks</strong>
+            </div>
+
+            <div class="metric-mini">
+                <span>Teams</span>
+                <strong id="teamsMini">8</strong>
+            </div>
+
+            <div class="metric-mini">
+                <span>Complexity</span>
+                <strong id="complexityMini">High</strong>
+            </div>
+
+        </div>
+
+        <div class="sidebar-foot">
+            Portfolio Prototype &middot; illustrative program data, not a real initiative
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="hero">
+            <div class="hero-text">
+                <span class="badge" id="badgeText">LAB PROTOTYPE</span>
+                <h1>Technical Program Management Studio</h1>
+                <p class="intro">
+                    One dashboard framework, reused across twelve hypothetical technical programs. Switch the initiative in the sidebar to see the architecture, risk matrix, and roadmap all update from that program's own data. Program data is illustrative, not from a real initiative.
+                </p>
+                <p class="viewing-label">
+                    Viewing <strong id="programTitle">AI Search Platform</strong> &mdash; <span id="programSubtitle">Modernizing ecommerce search through AI-driven product discovery.</span>
+                </p>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span>Budget</span>
+                    <strong id="budget">$850K</strong>
+                </div>
+                <div class="hero-stat">
+                    <span>Timeline</span>
+                    <strong id="timeline">7 Months</strong>
+                </div>
+                <div class="hero-stat">
+                    <span>Engineering Teams</span>
+                    <strong id="engineeringTeams">6</strong>
+                </div>
+                <div class="hero-stat is-health">
+                    <span>Program Health</span>
+                    <strong id="programHealth">&mdash;</strong>
+                </div>
+            </div>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab active" data-tab="summary">Executive Summary</button>
+            <button class="tab" data-tab="architecture">Architecture</button>
+            <button class="tab" data-tab="stakeholders">Stakeholders</button>
+            <button class="tab" data-tab="dependencies">Dependencies</button>
+            <button class="tab" data-tab="risks">Risk Matrix</button>
+            <button class="tab" data-tab="roadmap">Roadmap</button>
+            <button class="tab" data-tab="kpis">Success Metrics</button>
+        </nav>
+
+        <section class="tab-content active" id="summary">
+
+            <div class="grid-2">
+                <div class="card">
+                    <h2>Problem Statement</h2>
+                    <p id="problemStatement"></p>
+                </div>
+                <div class="card">
+                    <h2>Business Objectives</h2>
+                    <ul id="objectiveList" class="check-list"></ul>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h2>Technical Scope</h2>
+                    <ul id="technicalScope" class="chip-list"></ul>
+                </div>
+                <div class="card">
+                    <h2>Expected Outcomes</h2>
+                    <ul id="expectedOutcomes" class="check-list"></ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tab-content" id="architecture">
+
+            <div class="card">
+
+                <div class="section-header">
+                    <div>
+                        <h2>Solution Architecture</h2>
+                        <p>Request flow across the system, grouped by layer.</p>
+                    </div>
+
+                    <div class="architecture-legend">
+                        <span><span class="legend-dot frontend"></span>Frontend</span>
+                        <span><span class="legend-dot service"></span>Services</span>
+                        <span><span class="legend-dot data"></span>Data</span>
+                    </div>
+                </div>
+
+                <div id="architectureDiagram" class="architecture-diagram">
+                    <!-- JavaScript builds the lanes + connectors here -->
+                </div>
+
+            </div>
+
+        </section>
+        <section class="tab-content" id="stakeholders">
+
+            <div class="section-title">
+                <h2>Stakeholder Directory</h2>
+                <p>Cross-functional ownership across the program.</p>
+            </div>
+
+            <div id="stakeholderGrid" class="stakeholder-grid"></div>
+
+        </section>
+
+        <section class="tab-content" id="dependencies">
+
+            <div class="grid-2">
+                <div class="card">
+                    <h2>Program Dependencies</h2>
+                    <div id="dependencyList" class="dependency-list"></div>
+                </div>
+                <div class="card">
+                    <h2>Critical Path</h2>
+                    <p class="section-subtitle">Dependencies not yet complete, in delivery order.</p>
+                    <div id="criticalPath" class="critical-path"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tab-content" id="risks">
+
+            <div class="card">
+
+                <div class="section-header">
+                    <div>
+                        <h2>Risk Register</h2>
+                        <p>Plotted by probability and impact, identified during planning.</p>
+                    </div>
+                </div>
+
+                <div class="risk-matrix-wrapper">
+                    <div id="riskMatrix" class="risk-matrix"></div>
+                </div>
+
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h2>Risk Detail</h2>
+                    <table class="risk-table">
+                        <thead>
+                            <tr>
+                                <th>Risk</th>
+                                <th>Probability</th>
+                                <th>Impact</th>
+                                <th>Owner</th>
+                                <th>Mitigation</th>
+                            </tr>
+                        </thead>
+                        <tbody id="riskTableBody"></tbody>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <h2>Composite Severity</h2>
+                    <div class="score-display">
+                        <div class="score-bar-wrap">
+                            <div class="score-bar-track">
+                                <div class="score-bar-fill" id="riskScoreBar"></div>
+                            </div>
+                            <span class="score-bar-value"><strong id="riskScore">72</strong> / 100</span>
+                        </div>
+                        <p id="riskSummary">Moderate technical risk with several cross-team dependencies.</p>
+                    </div>
+                    <h3 class="mini-heading">Top Action Items</h3>
+                    <ul id="riskActions" class="check-list"></ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tab-content" id="roadmap">
+
+            <div class="card">
+                <h2>Program Timeline</h2>
+                <p class="section-subtitle">Major delivery milestones. Current phase reflects live program status.</p>
+                <div id="timelineContainer" class="timeline-container"></div>
+            </div>
+
+            <div class="grid-4 roadmap-stats">
+                <div class="stat-card">
+                    <span>Discovery</span>
+                    <strong id="weeksDiscovery">4 Weeks</strong>
+                </div>
+                <div class="stat-card">
+                    <span>Development</span>
+                    <strong id="weeksDevelopment">14 Weeks</strong>
+                </div>
+                <div class="stat-card">
+                    <span>Testing</span>
+                    <strong id="weeksTesting">6 Weeks</strong>
+                </div>
+                <div class="stat-card">
+                    <span>Launch</span>
+                    <strong id="launchDate">Q2 2027</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tab-content" id="kpis">
+
+            <div class="section-title">
+                <h2>Success Metrics</h2>
+                <p>Program performance indicators after launch.</p>
+            </div>
+
+            <div id="kpiGrid" class="kpi-grid"></div>
+
+            <div class="card">
+                <h2>Executive Summary</h2>
+                <div id="executiveSummary" class="executive-summary"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>
