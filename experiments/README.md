@@ -2,14 +2,15 @@ This directory contains interactive prototypes and technical experiments that co
 
 ## Experiments
 
-| Project | Live Demo | Source Code | Tech Stack |
-| :--- | :--- | :--- | :--- |
-| **01. Interactive 3D SimLab Room Builder** | [Launch Demo 🚀](https://nikigolen.github.io/experiments/3d-room-builder/) | [View Files 📄](./3d-room-builder/) | Three.js, Vanilla JS, CSS3, HTML5 |
-| **02. AI Product Discovery Lab** | [Launch Demo 🚀](https://nikigolen.github.io/experiments/ai-product-discovery/) | [View Files 📄](./ai-product-discovery/) | Google Gemini API, Cloudflare Workers, Vanilla JS |
-| **03. Technical Program Management Studio** | [Launch Demo 🚀](https://nikigolen.github.io/experiments/technical-program-studio/) | [View Files 📄](./technical-program-studio/) | Vanilla JS, HTML5, CSS3 |
-| **04. Query-Time Schema Fallback (QSF)** | [Launch Demo 🚀](https://nikigolen.github.io/experiments/query-schema-fallback/) | [View Files 📄](./query-schema-fallback/) | Search Architecture, Middleware, Vanilla JS |
+| Experiment Name | Experiment Links | Tech Stack |
+| :--- | :--- | :--- |
+| **01. Interactive 3D SimLab Room Builder** | [View Experiment](https://github.io) | Three.js, Vanilla JS, CSS3, HTML5 |
+| **02. AI Product Discovery Lab** | [View Experiment](https://github.io) | Google Gemini API, Cloudflare Workers, Vanilla JS |
+| **03. Technical Program Management Studio** | [View Experiment](https://github.io) | Vanilla JS, HTML5, CSS3 |
+| **04. Query-Time Schema Fallback (QSF)** | [View Experiment](https://github.io) | Search Architecture, Middleware, Vanilla JS |
 
 ---
+
 
 ## Experiment Descriptions
 ### Interactive 3D SimLab Room Builder
