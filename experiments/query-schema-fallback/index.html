@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QSF - Case Study &amp; Interactive Lab</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+
+        <span class="badge">
+            LAB PROTOTYPE
+        </span>
+
+        <h1>
+            Query-Time Schema Fallback (QSF)
+        </h1>
+
+        <p class="intro">
+            Exploring how an intermediate middleware layer handles schema degradation and missing attributes at query time rather than relying strictly on upstream feed validation.
+        </p>
+
+    </header>
+
+
+    <section class="reveal panel-block">
+
+        <div class="section-head">
+            <h2>The root cause</h2>
+            <p class="section-sub">
+                Real product feeds don't always fill in every field. One record here never got an <code>isWireless</code> value at all, it's just <code>null</code>. A search for "wireless" or "wired" has nothing to check against for that row, so it normally vanishes from results. This is the catalog exactly as it comes in, from <code>catalog-schema.json</code>.
+            </p>
+        </div>
+
+        <div id="record-grid" class="record-grid">
+            <!-- populated by script.js -->
+        </div>
+
+    </section>
+
+
+    <!-- Problem -->
+    <section class="reveal problem-approach">
+
+        <div class="pa-card pa-card--problem">
+            <span class="pa-eyebrow">The problem</span>
+            <p>
+                Negative queries like <em>"not wireless"</em> or <em>"wired"</em> break rigid boolean filters. If the DB flag is missing, most engines either hide the record or throw. A real product just drops out of results, silently.
+            </p>
+        </div>
+
+        <div class="pa-card pa-card--approach">
+            <span class="pa-eyebrow pa-eyebrow--accent">The approach</span>
+            <p>
+                QSF catches the query before it hits the filter. When the flag is null, it falls back to tags like <code>#corded</code> or <code>#wired</code> to resolve it, and logs exactly how it got there instead of guessing quietly.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Engine -->
+    <section class="reveal engine-section">
+
+        <div class="section-head">
+            <h2>Try the resolver</h2>
+            <p class="section-sub">
+                Type a constraint below. The trace on the right is real &mdash; not a mock animation.
+            </p>
+        </div>
+
+        <div class="query-bar">
+            <svg class="query-bar-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 20L15.8 15.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input
+                type="text"
+                id="search-input"
+                placeholder="not wired&hellip;  wireless&hellip;  peripherals&hellip;"
+                autocomplete="off"
+                spellcheck="false"
+            >
+            <span class="query-bar-hint">try &ldquo;not wired&rdquo;</span>
+        </div>
+
+        <div class="engine-grid">
+
+            <div class="trace-pane">
+                <div class="trace-pane-head">
+                    <span class="trace-dot"></span>
+                    <span class="trace-dot"></span>
+                    <span class="trace-dot"></span>
+                    <span class="trace-pane-title">resolution&nbsp;trace</span>
+                </div>
+                <div id="trace-console" class="trace-console" aria-live="polite">
+                    <!-- populated by script.js -->
+                </div>
+            </div>
+
+            <div class="results-pane">
+                <div class="results-pane-head">
+                    <span class="results-count" id="results-count">&nbsp;</span>
+                </div>
+                <div id="results-container" class="results-grid">
+                    <!-- populated by script.js -->
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <p>
+        Portfolio Prototype &bull; Built with HTML, CSS, JavaScript, and a JSON knowledge base.
+    </p>
+</footer>
+
+
+<script src="script.js" defer></script>
+
+</body>
+
+</html>
