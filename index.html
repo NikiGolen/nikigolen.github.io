@@ -225,11 +225,12 @@
 
       <p class="project-tag">Project 01</p>
 
-      <h3 class="project-title">Data Auditing & Relevancy Engineering</h3>
+      <h3 class="project-title">Site Search Platform Evaluation & Migration</h3>
 
       <p class="project-desc">
-        Audited and optimized native site-search architecture to eliminate discovery friction and maximize query relevance across a sprawling B2B catalog.
+         Evaluated enterprise search platforms to replace Magento's native search, aiming to improve product discovery and give merchandising more control over search relevance.
       </p>
+
 
 
       <div class="project-contributions">
@@ -238,18 +239,18 @@
 
         <ul>
 
-          <li><strong>Dataset Analysis:</strong> Evaluated an extensive dataset of over 3,000 top unique user search terms to establish exact query intent patterns.</li>
+          <li>Ran platform demos and feature comparisons across candidate vendors; documented tradeoffs to support the selection decision.</li>
+          <li>Analyzed 3,000+ unique customer search queries to find patterns in search behavior and relevance gaps.</li>
+          <li>Configured synonym mappings, redirects, search shortcuts, and metadata to cut down unsuccessful searches.</li>
+          <li>Partnered with an external dev team on requirements review, backend validation, and testing through implementation.</li>
 
-          <li><strong>Logic Configuration:</strong> Manually engineered advanced business rules, complex synonym mappings, and automated URL redirects within the administration panel.</li>
-
-          <li><strong>Threshold Management:</strong> Navigated rigid 100-rule platform system limitations to seamlessly deliver high-impact results from day one.</li>
 
         </ul>
 
       </div>
 
 
-      <p class="project-stack">Magento · Google Analytics · Data Analysis</p>
+      <p class="project-stack"> Magento Commerce · Doofinder · GA4 · Data Analysis</p>
 
     </article>
 
@@ -258,10 +259,10 @@
 
       <p class="project-tag">Project 02</p>
 
-      <h3 class="project-title">E-Commerce Visual Configuration Tool (Kit Builder)</h3>
+      <h3 class="project-title">Kit Builder (Product Configurator</h3>
 
        <p class="project-desc">
-          Built by our contracted developer to let customers configure product bundles online; I own the ongoing data validation that keeps kit-only SKUs correctly scoped for a program that has generated more than $10M in rolling 52-week revenue.
+          Defined catalog requirements and own the ongoing data validation that keeps kit-only components separate from the standard catalog, for a program generating $10M+ in rolling 52-week revenue.
         </p>
 
 
@@ -271,29 +272,30 @@
 
         <ul>
 
-          <li><strong>Data Validation:</strong> Monitor ERP flags on kit-only SKUs to confirm they're set up correctly and don't leak into general search or the main storefront.</li>
+          <li>Validate ERP product attributes and kit-specific flags so kit-only items stay out of standard catalog browsing and search.</li>
+          <li>Defined how kit-only products get identified, structured, and handled differently from standard items.</li>
+          <li>Partner with an external dev team on edge cases and packaging logic as issues come up.</li>
+          <li>Run recurring audits of kit-related product data to catch configuration issues early.</li>
 
-          <li><strong>Requirements Input:</strong> Helped define how kit-only components needed to be flagged and handled differently from general catalog items.</li>
-
-          <li><strong>Cross-Team Coordination:</strong> Partner with our contracted developer on edge cases and packaging-logic issues as they come up.</li>
 
         </ul>
 
       </div>
 
 
-      <p class="project-stack">Magento · ERP · Requirements Gathering</p>
+      <p class="project-stack"> Magento Commerce · ERP · Product Configuration · Data Governance</p>
 
     </article>
         <article class="project-card">
 
   <p class="project-tag">Project 03</p>
 
-  <h3 class="project-title">Cookie Consent Banner & Tag Governance</h3>
+   <h3 class="project-title">Consent Management & Tag Governance</h3>
 
   <p class="project-desc">
-    Co-developed a consent management solution that synchronizes HubSpot preferences with Google Tag Manager and Google Consent Mode, ensuring analytics and advertising technologies respect user privacy while maintaining reliable measurement.
-  </p>
+       Co-built a consent integration syncing HubSpot cookie preferences with Google Tag Manager and Google Consent Mode.
+    </p>
+
 
   <div class="project-contributions">
 
@@ -301,17 +303,17 @@
 
     <ul>
 
-      <li><strong>Consent Architecture:</strong> Implemented Google Consent Mode defaults before Google Tag Manager initialization to ensure tags respected user consent from the first page load.</li>
+      <li>Wrote the JS logic that sets GTM consent defaults before containers initialize, so tags respect consent from first page load.</li>
+      <li>Built logic to read returning visitors' saved HubSpot preferences and apply them to Google services on load.</li>
+      <li>Built cookie logic that clears analytics/advertising cookies across subdomains on decline, without breaking core site function.</li>
+      <li>Tested across scenarios to confirm HubSpot, GTM, and Consent Mode stayed in sync through platform updates.</li>
 
-      <li><strong>Preference Synchronization:</strong> Built logic to read HubSpot consent preferences, apply returning visitors' saved choices, and keep Google services synchronized with category-level consent updates.</li>
-
-      <li><strong>Privacy & Cookie Governance:</strong> Developed cookie management logic to remove analytics and advertising cookies across domains when consent was declined while preserving required functional behavior.</li>
 
     </ul>
 
   </div>
 
-  <p class="project-stack">JavaScript · Google Tag Manager · HubSpot · Magento · Privacy Compliance</p>
+  <p class="project-stack"> JavaScript · GTM · Google Consent Mode · HubSpot · Magento Commerce</p>
 
 </article>
 
@@ -321,11 +323,12 @@
 
       <p class="project-tag">Project 04</p>
 
-      <h3 class="project-title">Web Vitals & Site Performance Engineering</h3>
+      <h3 class="project-title">Website Performance Optimization</h3>
 
       <p class="project-desc">
-        Audited and refactored core frontend delivery assets to optimize page speed, boost search engine crawling visibility, and enhance user experience metrics.
+       Identified speed bottlenecks and coordinated fixes across marketing and dev to improve Lighthouse scores and Core Web Vitals.
       </p>
+
 
       <div class="project-contributions">
 
@@ -333,17 +336,17 @@
 
         <ul>
 
-          <li><strong>Quantifiable Performance Gains:</strong> Leveraged Google Lighthouse audits to systematically identify speed bottlenecks and establish baseline metrics, boosting desktop performance scores from 46 to 84.</li>
+          <li>Used Lighthouse as the benchmarking tool across dev cycles to track desktop/mobile impact of changes.</li>
+          <li>Partnered with developers on image optimization, VCL config, CSS/JS delivery, and homepage template changes; set image sizing standards with marketing.</li>
+          <li>Monitored response times via Pingdom and Lighthouse to verify improvements and find the next bottleneck.</li>
+          <li>Result: desktop Lighthouse score 84 to 90, LCP 2.4s to 1.2s. Mobile optimization ongoing as a multi-year effort.</li>
 
-          <li><strong>Cross-Functional Optimization:</strong> Partnered with developers to execute technical asset optimization strategies, managing requirements for sitewide image compression, VCL modifications, and the unmerging of heavy CSS/JS structures.</li>
-
-          <li><strong>Speed Infrastructure & Monitoring:</strong> Configured advanced automated reporting systems (Pingdom) to systematically track site health and reduce core search load responses below a strict 4-second threshold.</li>
 
         </ul>
 
       </div>
 
-      <p class="project-stack">Google Lighthouse · Pingdom · Performance Auditing</p>
+      <p class="project-stack"> Google Lighthouse · Pingdom · Magento Commerce · Core Web Vitals</p>
 
     </article>
 
@@ -353,11 +356,12 @@
 
       <p class="project-tag">Project 05</p>
 
-      <h3 class="project-title">International Storefront & Landing Page Localization</h3>
+      <h3 class="project-title">International Storefront Management</h3>
 
       <p class="project-desc">
-        Own the customer-facing accuracy of the international storefront experience across a multi-region B2B catalog.
+         Own the accuracy of international product visibility and localized landing pages across a multi-region platform.
       </p>
+
 
       <div class="project-contributions">
 
@@ -365,17 +369,17 @@
 
         <ul>
 
-          <li><strong>Data Verification:</strong> Confirm internationally-flagged products display correctly on the appropriate regional storefront.</li>
+          <li>Verify region-specific products display on the correct storefront; flag visibility/routing discrepancies.</li>
+          <li>Build and maintain international versions of custom landing pages for regional campaigns.</li>
+          <li>Test storefront behavior after catalog updates and content releases across regions.</li>
+          <li>Work with developers to resolve region-specific availability and routing issues.</li>
 
-          <li><strong>Localized Content Build:</strong> Build a parallel international version of every custom landing page alongside the domestic default.</li>
-
-          <li><strong>Cross-Team Coordination:</strong> Flag discrepancies to engineering when region-locked products don't route or display as expected.</li>
 
         </ul>
 
       </div>
 
-      <p class="project-stack">Magento · International Storefronts · Landing Page Development</p>
+      <p class="project-stack"> Magento Commerce · International Ecommerce · QA</p>
 
     </article>
 
@@ -385,11 +389,12 @@
 
       <p class="project-tag">Project 06</p>
 
-      <h3 class="project-title">Discovery Relevancy Engineering & Recommendation Engines</h3>
+      <h3 class="project-title">Product Recommendation & Merchandising</h3>
 
       <p class="project-desc">
-        Audited and optimized native site-search architecture and cross-sell recommendation loops to eliminate discovery friction and maximize conversion optimization across a sprawling B2B catalog.
-      </p>
+         Built merchandising strategies to drive discovery beyond search.
+          </p>
+
 
       <div class="project-contributions">
 
@@ -397,20 +402,17 @@
 
         <ul>
 
-          <li><strong>Dataset Analysis:</strong> Evaluated an extensive dataset of over 3,000 top unique user search terms to establish exact query intent patterns and eliminate navigation bottlenecks.</li>
+          <li> Scoped and launched the "Customers Also Viewed" pilot: narrowed 1,630 candidate products down to top performers by sales history and availability.</li>
+          <li>Used Microsoft Clarity heatmaps to measure engagement with recommendation modules post-launch.</li>
+          <li>Configured Magento product relationships and recommendation logic to prioritize proprietary products in cross-sell.</li>
+          <li>Audit recommendation relationships as the catalog changes to keep them accurate.</li>
 
-          <li><strong>Manual Pilot & Engagement Tracking:</strong> Scoped and launched a "Customers Also Viewed" pilot by narrowing 1,630 candidate SKUs down to the top 10 web sellers based on sales history and web availability, then used heatmapping to track customer engagement with the recommendations post-launch.</li>
-
-          <li><strong>Algorithmic Merchandising Bias:</strong> Manually configured backend relational rule sets in Magento to systematically prioritize proprietary first-party branded items within cross-sell matrices.</li>
-
-          <li><strong>Threshold Management:</strong> Navigated rigid platform system rule limitations to seamlessly deliver high-impact personalization and automated routing pathways from day one.</li>
 
         </ul>
 
       </div>
 
-      <p class="project-stack">Magento Commerce · Algorithmic Merchandising · Personalization Engine · Data Analysis</p>
-
+      <p class="project-stack"> Magento Commerce · Microsoft Clarity · Data Analysis</p>
     </article>
 
 
@@ -419,11 +421,12 @@
 
       <p class="project-tag">Project 07</p>
 
-      <h3 class="project-title">Digital Analytics & Quality Score Optimization</h3>
+      <h3 class="project-title">Analytics & Executive Reporting</h3>
 
-      <p class="project-desc">
-        Upgraded the company's digital tracking infrastructure to ensure flawless data continuity while scaling multi-channel digital ad auctions.
-      </p>
+       <p class="project-desc">
+         Own GA4, GTM, and Microsoft Clarity, and build the reporting leadership uses to track site and campaign performance.
+        </p>
+
 
       <div class="project-contributions">
 
@@ -431,28 +434,28 @@
 
         <ul>
 
-          <li><strong>GA4 Architecture Migration:</strong> Spearheaded the early-stage migration to Google Analytics 4, mapping advanced event tracking protocols ahead of legacy platform deprecations.</li>
-
-          <li><strong>Ad Auction Relevance:</strong> Managed massive daily catalog listings on Google Merchant Center and structured targeted keyword audits to lower cost-per-click metrics.</li>
-
-          <li><strong>User Behavior Mapping:</strong> Integrated Microsoft Clarity heatmapping software to analyze behavior metrics on custom landing pages, converting data insights into structural layout updates.</li>
+          <li>Maintain GA4/GTM config to support analytics and new feature launches.</li>
+          <li>Build and distribute recurring reports on traffic, engagement, ad performance, and YOY trends for IT, marketing, sales, and leadership.</li>
+          <li>Build Looker Studio dashboards for Google Ads performance, campaign budgets, and site analytics.</li>
+          <li>Use Clarity heatmaps and session recordings alongside GA4 to spot behavior patterns and inform landing page changes.</li>
+          <li>Handle ad hoc data requests from stakeholders across departments.</li>
 
         </ul>
 
       </div>
 
-      <p class="project-stack">Google Analytics 4 · Google Merchant Center · Microsoft Clarity · Tag Management</p>
+      <p class="project-stack">GA4 · GTM · Looker Studio · Microsoft Clarity · Google Ads</p>
 
     </article>
 <article class="project-card">
 
   <p class="project-tag">Project 08</p>
 
-  <h3 class="project-title">HTML Product Description Cleanup (5,000+ Products)</h3>
+  <h3 class="project-title">Catalog Data Quality (5,000+ Products)</h3>
 
-  <p class="project-desc">
-    Led a large-scale data quality initiative to audit and correct HTML issues across more than 5,000 product descriptions, improving catalog consistency, content presentation, and long-term maintainability.
-  </p>
+   <p class="project-desc">
+ Led an audit of legacy product content to fix HTML and encoding issues across the catalog.
+</p>
 
   <div class="project-contributions">
 
@@ -460,17 +463,45 @@
 
     <ul>
 
-      <li><strong>Catalog Audit:</strong> Reviewed thousands of product descriptions to identify malformed HTML, inconsistent formatting, and legacy content issues accumulated over time.</li>
-
-      <li><strong>Content Standardization:</strong> Corrected broken bullet lists, improperly encoded measurement symbols, spacing inconsistencies, and other HTML formatting issues to create a consistent customer experience.</li>
-
-      <li><strong>Data Quality Improvement:</strong> Established cleaner product content standards that improved catalog maintainability and reduced future formatting inconsistencies.</li>
+      <li>Reviewed 5,000+ product records for malformed HTML, inconsistent formatting, and legacy issues.</li>
+      <li>Fixed broken lists, missing paragraph tags, spacing, and other markup errors.</li>
+      <li>Found and manually corrected encoding-related title errors caused by ERP/Magento incompatibility.</li>
+      <li>Updated records directly in ERP to fix the root cause, not just the symptom.</li>
 
     </ul>
 
   </div>
 
-  <p class="project-stack">Magento · ERP · HTML · Data Quality</p>
+  <p class="project-stack"> Magento Commerce · ERP · HTML · Data Quality</p>
+
+</article>
+    <article class="project-card">
+
+  <p class="project-tag">Project 09</p>
+
+   <h3 class="project-title">Ecommerce Roadmap & Strategy</h3>
+
+   <p class="project-desc">
+ Own the annual ecommerce planning process. Built and presented roadmaps from Web 3.0 through Web 8.0 to company ownership, the CFO, and department leadership.
+</p>
+
+
+  <div class="project-contributions">
+
+    <h4>Key Contributions:</h4>
+
+    <ul>
+
+      <li>Evaluate platform capabilities, CX opportunities, technical limits, and business priorities to set annual priorities.</li>
+      <li>Manage a portfolio spanning search, catalog architecture, SEO, analytics, privacy compliance, and platform upgrades.</li>
+      <li>Coordinate with IT, Marketing, Sales, Purchasing, Master Data, and external dev partners on feasibility and priority.</li>
+      <li>Evaluate new technology (search platforms, AI merchandising, Magento upgrades, configurators) for the roadmap.</li>
+
+    </ul>
+
+  </div>
+
+  <p class="project-stack"> Magento Commerce · ERP Integration · GA4 · GTM · Google Ads · Jira · B2B Ecommerce</p>
 
 </article>
   </div>
