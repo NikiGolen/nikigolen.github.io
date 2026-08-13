@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecommerce Fraud Decisioning — C4 Architecture Board</title>
+<meta name="description" content="A hypothetical C4 architecture and process board for an ecommerce fraud decisioning system, built Miro-board style.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <a class="back-link" href="https://nikigolen.github.io/" title="Back to portfolio">
+      <span class="back-arrow">&larr;</span> Portfolio
+    </a>
+    <span class="crumb-sep">/</span>
+    <span class="crumb">Experiments</span>
+    <span class="crumb-sep">/</span>
+    <span class="crumb crumb-current">Fraud C4</span>
+  </div>
+  <div class="topbar-center">
+    <span class="board-icon" aria-hidden="true">&#9635;</span>
+    <h1 class="board-title">Ecommerce Fraud Decisioning</h1>
+    <span class="board-tag">hypothetical case study</span>
+  </div>
+  <div class="topbar-right">
+    <button class="legend-toggle" id="legendToggle" aria-expanded="false" aria-controls="legendPanel">
+      Legend
+    </button>
+  </div>
+</header>
+
+<div class="board-shell">
+
+  <nav class="sidebar" id="sidebar" aria-label="Board frames">
+    <p class="sidebar-heading">Frames</p>
+    <ul class="frame-list">
+      <li><button class="frame-nav-btn" data-target="frame-c1">
+        <span class="frame-nav-index">C1</span> System Context
+      </button></li>
+      <li><button class="frame-nav-btn" data-target="frame-c2">
+        <span class="frame-nav-index">C2</span> Container
+      </button></li>
+      <li><button class="frame-nav-btn" data-target="frame-c3">
+        <span class="frame-nav-index">C3</span> Component
+      </button></li>
+      <li><button class="frame-nav-btn" data-target="frame-process">
+        <span class="frame-nav-index">&#8594;</span> Process View
+      </button></li>
+      <li><button class="frame-nav-btn" data-target="frame-signals">
+        <span class="frame-nav-index">&#9673;</span> Risk Signals
+      </button></li>
+      <li><button class="frame-nav-btn" data-target="frame-experiment">
+        <span class="frame-nav-index">&#9733;</span> Experiment
+      </button></li>
+    </ul>
+    <p class="sidebar-hint">Drag to pan &middot; scroll to zoom &middot; click a card for detail</p>
+  </nav>
+
+  <main class="canvas-viewport" id="viewport">
+    <div class="canvas-grid" id="canvasGrid"></div>
+    <div class="canvas-inner" id="canvasInner">
+
+      <section class="frame frame-c1" id="frame-c1" style="width:1180px;height:560px;">
+        <span class="frame-tab">C1 &middot; System Context</span>
+        <svg class="connectors" id="conn-c1"></svg>
+
+        <div class="node node-person" id="c1-customer" style="left:40px;top:220px;width:170px;height:110px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Person</span>
+          <span class="node-icon">&#9679;</span>
+          <span class="node-title">Customer</span>
+          <span class="node-sub">External actor</span>
+        </div>
+
+        <div class="node node-system" id="c1-ecommerce" style="left:300px;top:50px;width:230px;height:120px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Software System</span>
+          <span class="node-title">Ecommerce Platform</span>
+          <span class="node-sub">Storefront, cart &amp; checkout</span>
+        </div>
+
+        <div class="node node-system node-focal" id="c1-fraud" style="left:300px;top:300px;width:250px;height:140px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Software System &middot; in scope</span>
+          <span class="node-title">Fraud Decisioning</span>
+          <span class="node-sub">Scores orders &amp; routes decisions in real time</span>
+        </div>
+
+        <div class="node node-external" id="c1-payment" style="left:640px;top:50px;width:230px;height:120px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">External System</span>
+          <span class="node-title">Payment Provider</span>
+          <span class="node-sub">Authorization, AVS/CVV, chargebacks</span>
+        </div>
+
+        <div class="node node-system" id="c1-order" style="left:640px;top:300px;width:230px;height:120px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Software System</span>
+          <span class="node-title">Order Management</span>
+          <span class="node-sub">Fulfillment &amp; order lifecycle</span>
+        </div>
+
+        <div class="node node-person" id="c1-analyst" style="left:960px;top:300px;width:180px;height:120px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Person</span>
+          <span class="node-icon">&#9679;</span>
+          <span class="node-title">Fraud Ops Analyst</span>
+          <span class="node-sub">Internal actor</span>
+        </div>
+      </section>
+
+      <section class="frame frame-c2" id="frame-c2" style="width:1360px;height:620px;">
+        <span class="frame-tab">C2 &middot; Container — Fraud Decisioning System</span>
+        <svg class="connectors" id="conn-c2"></svg>
+
+        <div class="node node-container" id="c2-signal" style="left:40px;top:250px;width:190px;height:110px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Container</span>
+          <span class="node-title">Signal Collection</span>
+          <span class="node-sub">Ingests raw event data</span>
+        </div>
+
+        <div class="node node-container" id="c2-feature" style="left:300px;top:50px;width:200px;height:110px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Container</span>
+          <span class="node-title">Feature Store</span>
+          <span class="node-sub">Real-time &amp; historical features</span>
+        </div>
+
+        <div class="node node-container" id="c2-scoring" style="left:300px;top:440px;width:200px;height:110px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Container</span>
+          <span class="node-title">Risk Scoring Service</span>
+          <span class="node-sub">ML model inference</span>
+        </div>
+
+        <div class="node node-container node-focal" id="c2-decision" style="left:580px;top:250px;width:220px;height:130px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Container &middot; in scope</span>
+          <span class="node-title">Decision Engine</span>
+          <span class="node-sub">Rules + thresholds + routing</span>
+        </div>
+
+        <div class="node node-outcome node-outcome-approve" id="c2-approve" style="left:860px;top:130px;width:150px;height:70px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-title">Approve</span>
+          <span class="node-sub">Low risk</span>
+        </div>
+        <div class="node node-outcome node-outcome-review" id="c2-review" style="left:860px;top:280px;width:150px;height:70px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-title">Review</span>
+          <span class="node-sub">Medium risk</span>
+        </div>
+        <div class="node node-outcome node-outcome-reject" id="c2-reject" style="left:860px;top:430px;width:150px;height:70px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-title">Reject</span>
+          <span class="node-sub">High risk</span>
+        </div>
+
+        <div class="node node-container" id="c2-queue" style="left:1080px;top:50px;width:220px;height:110px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Container</span>
+          <span class="node-title">Case Queue</span>
+          <span class="node-sub">Holds orders pending review</span>
+        </div>
+
+        <div class="node node-container" id="c2-console" style="left:1080px;top:440px;width:220px;height:110px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Container</span>
+          <span class="node-title">Fraud Ops Console</span>
+          <span class="node-sub">Analyst review UI</span>
+        </div>
+      </section>
+
+      <section class="frame frame-c3" id="frame-c3" style="width:1300px;height:300px;">
+        <span class="frame-tab">C3 &middot; Component — Decision Engine</span>
+        <svg class="connectors" id="conn-c3"></svg>
+
+        <div class="node node-component" id="c3-rules" style="left:40px;top:80px;width:220px;height:140px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Component</span>
+          <span class="node-title">Rule Evaluator</span>
+          <span class="node-sub">Deterministic fraud rules</span>
+        </div>
+
+        <div class="node node-component" id="c3-threshold" style="left:300px;top:80px;width:220px;height:140px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Component</span>
+          <span class="node-title">Threshold Manager</span>
+          <span class="node-sub">Score cutoffs by segment</span>
+        </div>
+
+        <div class="node node-component" id="c3-mladapter" style="left:560px;top:80px;width:220px;height:140px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Component</span>
+          <span class="node-title">ML Score Adapter</span>
+          <span class="node-sub">Calls Risk Scoring Service</span>
+        </div>
+
+        <div class="node node-component" id="c3-explain" style="left:820px;top:80px;width:220px;height:140px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Component</span>
+          <span class="node-title">Explainability Service</span>
+          <span class="node-sub">Reason codes for each decision</span>
+        </div>
+
+        <div class="node node-component" id="c3-audit" style="left:1080px;top:80px;width:220px;height:140px;" tabindex="0" role="button" aria-haspopup="dialog">
+          <span class="node-kind">Component</span>
+          <span class="node-title">Audit Logger</span>
+          <span class="node-sub">Immutable decision trail</span>
+        </div>
+      </section>
+
+      <section class="frame frame-process" id="frame-process">
+        <span class="frame-tab">Process View &middot; Order to Decision</span>
+
+        <div class="swimlanes">
+          <div class="swimlane">
+            <div class="lane-label">Customer</div>
+            <div class="lane-track">
+              <div class="step-card" id="p-place" tabindex="0" role="button" aria-haspopup="dialog">Places order</div>
+            </div>
+          </div>
+          <div class="swimlane">
+            <div class="lane-label">Ecommerce Platform</div>
+            <div class="lane-track">
+              <div class="step-spacer"></div>
+              <div class="step-card" id="p-submit" tabindex="0" role="button" aria-haspopup="dialog">Submits order for scoring</div>
+            </div>
+          </div>
+          <div class="swimlane">
+            <div class="lane-label">Fraud Decisioning</div>
+            <div class="lane-track">
+              <div class="step-spacer step-spacer-lg"></div>
+              <div class="step-card" id="p-collect" tabindex="0" role="button" aria-haspopup="dialog">Collects signals</div>
+              <div class="step-card" id="p-score" tabindex="0" role="button" aria-haspopup="dialog">Scores risk</div>
+              <div class="step-card step-card-branch" id="p-route" tabindex="0" role="button" aria-haspopup="dialog">Routes decision</div>
+            </div>
+            <div class="lane-branches">
+              <div class="branch branch-approve" id="p-approve" tabindex="0" role="button" aria-haspopup="dialog">
+                <span class="branch-label">Approve</span>
+                <span class="branch-sub">Order proceeds</span>
+              </div>
+              <div class="branch branch-review" id="p-review" tabindex="0" role="button" aria-haspopup="dialog">
+                <span class="branch-label">Review</span>
+                <span class="branch-sub">Sent to case queue</span>
+              </div>
+              <div class="branch branch-reject" id="p-reject" tabindex="0" role="button" aria-haspopup="dialog">
+                <span class="branch-label">Reject</span>
+                <span class="branch-sub">Order blocked</span>
+              </div>
+            </div>
+          </div>
+          <div class="swimlane">
+            <div class="lane-label">Fraud Ops Analyst</div>
+            <div class="lane-track lane-track-analyst">
+              <div class="step-card step-card-dim" id="p-analyst" tabindex="0" role="button" aria-haspopup="dialog">Resolves reviewed cases</div>
+            </div>
+          </div>
+          <div class="swimlane">
+            <div class="lane-label">Order Management</div>
+            <div class="lane-track lane-track-final">
+              <div class="step-card step-card-dim" id="p-fulfill" tabindex="0" role="button" aria-haspopup="dialog">Fulfills or cancels order</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="frame frame-signals" id="frame-signals">
+        <span class="frame-tab">Reference &middot; Risk Signal Taxonomy</span>
+        <div class="signal-grid">
+          <div class="signal-card" id="sig-device" tabindex="0" role="button" aria-haspopup="dialog">
+            <span class="signal-title">Device</span>
+            <div class="tag-row">
+              <span class="tag">Device fingerprint</span>
+              <span class="tag">Emulator detection</span>
+              <span class="tag">IP reputation</span>
+            </div>
+          </div>
+          <div class="signal-card" id="sig-account" tabindex="0" role="button" aria-haspopup="dialog">
+            <span class="signal-title">Account</span>
+            <div class="tag-row">
+              <span class="tag">Account age</span>
+              <span class="tag">Login velocity</span>
+              <span class="tag">Prior chargebacks</span>
+            </div>
+          </div>
+          <div class="signal-card" id="sig-payment" tabindex="0" role="button" aria-haspopup="dialog">
+            <span class="signal-title">Payment</span>
+            <div class="tag-row">
+              <span class="tag">BIN risk</span>
+              <span class="tag">AVS / CVV match</span>
+              <span class="tag">Card velocity</span>
+            </div>
+          </div>
+          <div class="signal-card" id="sig-behavior" tabindex="0" role="button" aria-haspopup="dialog">
+            <span class="signal-title">Behavior</span>
+            <div class="tag-row">
+              <span class="tag">Session pattern</span>
+              <span class="tag">Time on site</span>
+              <span class="tag">Copy/paste at checkout</span>
+            </div>
+          </div>
+          <div class="signal-card" id="sig-order" tabindex="0" role="button" aria-haspopup="dialog">
+            <span class="signal-title">Order</span>
+            <div class="tag-row">
+              <span class="tag">Basket value</span>
+              <span class="tag">Ship/bill mismatch</span>
+              <span class="tag">High-resale items</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="frame frame-experiment" id="frame-experiment">
+        <span class="frame-tab">Product Experiment</span>
+        <div class="sticky-note">
+          <span class="sticky-eyebrow">Hypothesis</span>
+          <h3 class="sticky-title">Device fingerprinting will cut fraud without hurting conversion</h3>
+          <p class="sticky-body">If we add device-level signals to the Decision Engine, we should catch more fraudulent orders while leaving legitimate customers mostly unaffected. Worth a real A/B test before rolling it out broadly.</p>
+          <div class="sticky-metrics">
+            <span class="metric metric-down">Fraud loss <b>&darr;</b></span>
+            <span class="metric metric-down">False positives <b>&darr;</b></span>
+            <span class="metric metric-flat">Conversion <b>&harr;</b></span>
+            <span class="metric metric-down">Review volume <b>&darr;</b></span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="zoom-controls">
+    <button id="zoomOut" aria-label="Zoom out">&minus;</button>
+    <span id="zoomLevel">100%</span>
+    <button id="zoomIn" aria-label="Zoom in">+</button>
+    <button id="zoomReset" class="zoom-reset">Reset</button>
+  </div>
+
+  <aside class="legend-panel" id="legendPanel" aria-hidden="true">
+    <p class="legend-heading">C4 Notation</p>
+    <div class="legend-row"><span class="swatch swatch-person"></span> Person</div>
+    <div class="legend-row"><span class="swatch swatch-system"></span> Software System</div>
+    <div class="legend-row"><span class="swatch swatch-external"></span> External System</div>
+    <div class="legend-row"><span class="swatch swatch-container"></span> Container</div>
+    <div class="legend-row"><span class="swatch swatch-component"></span> Component</div>
+    <div class="legend-row"><span class="swatch swatch-focal"></span> In scope for this role</div>
+  </aside>
+
+  <aside class="detail-panel" id="detailPanel" aria-hidden="true">
+    <button class="detail-close" id="detailClose" aria-label="Close">&times;</button>
+    <span class="detail-kind" id="detailKind">SYSTEM DETAIL</span>
+    <h2 class="detail-title" id="detailTitle">Select a node</h2>
+    <p class="detail-summary" id="detailSummary">Click any system, container, component, or process step to learn more.</p>
+    <ul class="detail-list" id="detailList"></ul>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
