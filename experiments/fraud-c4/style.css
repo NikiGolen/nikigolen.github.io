@@ -101,7 +101,6 @@ ul{ list-style: none; margin: 0; padding: 0; }
   left: 50%;
   transform: translateX(-50%);
 }
-.board-icon{ color: var(--c-system); font-size: 14px; }
 .board-title{
   font-family: var(--font-display);
   font-size: 15px;
