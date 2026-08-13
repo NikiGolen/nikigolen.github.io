@@ -1,6 +1,4 @@
 :root{
-  --sticky-bg:      #D6E4FA;
-  --sticky-ink:     #1A1A2E;
   --canvas-bg:      #FAFAF8;
   --dot-color:      #DEDEDA;
   --ink:            #1A1A2E;
@@ -22,6 +20,8 @@
 
   --accent:         #FFC93C;
   --accent-ink:     #1A1A2E;
+  --sticky-bg:      #D6E4FA;
+  --sticky-ink:     #1A1A2E;
   --success:        #2FA66A;
   --warn:           #E3A008;
   --danger:         #D64545;
@@ -141,6 +141,7 @@ ul{ list-style: none; margin: 0; padding: 0; }
   height: calc(100vh - var(--topbar-h));
   display: flex;
 }
+
 .sidebar{
   width: var(--sidebar-w);
   flex-shrink: 0;
@@ -293,7 +294,7 @@ ul{ list-style: none; margin: 0; padding: 0; }
   text-transform: uppercase;
   opacity: .75;
 }
-.node-icon{ font-size: 20px; line-height: 1; margin-bottom: 2px; }
+.node-icon{ width: 22px; height: 22px; color: rgba(255,255,255,.85); margin-bottom: 2px; }
 .node-title{
   font-family: var(--font-display);
   font-size: 15px;
@@ -458,6 +459,7 @@ ul{ list-style: none; margin: 0; padding: 0; }
   padding: 5px 10px;
   color: var(--ink-soft);
 }
+
 .frame-experiment{
   width: 480px;
   border: none;
@@ -498,6 +500,7 @@ ul{ list-style: none; margin: 0; padding: 0; }
   border-radius: var(--radius-pill);
   padding: 5px 10px;
 }
+
 .zoom-controls{
   position: absolute;
   right: 24px;
@@ -655,5 +658,35 @@ ul{ list-style: none; margin: 0; padding: 0; }
   .sidebar{ display: none; }
   .board-tag{ display: none; }
   .detail-panel{ width: 88vw; }
-  .zoom-controls{ right: 12px; bottom: 12px; }
+  .zoom-controls{ right: 12px; bottom: 68px; }
+  .mobile-frame-bar{ display: flex; }
+}
+
+.mobile-frame-bar{
+  display: none;
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  padding: 10px 12px;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 25;
+}
+.mobile-frame-btn{
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  background: var(--canvas-bg);
+  color: var(--ink);
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+.mobile-frame-btn.is-active{
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
 }
