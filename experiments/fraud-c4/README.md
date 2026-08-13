@@ -3,9 +3,7 @@
 An interactive, Miro-style architecture board for a hypothetical ecommerce fraud decisioning system, built using the [C4 model](https://c4model.com/) (Context, Container, Component).
  
 **[View the live experiment →](https://nikigolen.github.io/experiments/fraud-c4/)**
- 
-![Fraud Decisioning C4 Architecture Board](preview.png)
- 
+
 ## What it is
  
 A single-page, pannable and zoomable canvas that documents a fraud detection system at three levels of zoom, plus a process view showing how an order actually moves from checkout to a final decision.
