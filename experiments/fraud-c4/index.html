@@ -35,7 +35,7 @@
 
 <div class="board-shell">
 
-  <nav class="sidebar" id="sidebar" aria-label="Board frames">
+    <nav class="sidebar" id="sidebar" aria-label="Board frames">
     <p class="sidebar-heading">Frames</p>
     <ul class="frame-list">
       <li><button class="frame-nav-btn" data-target="frame-c1">
@@ -60,17 +60,17 @@
     <p class="sidebar-hint">Drag to pan &middot; scroll to zoom &middot; click a card for detail</p>
   </nav>
 
-  <main class="canvas-viewport" id="viewport">
+    <main class="canvas-viewport" id="viewport">
     <div class="canvas-grid" id="canvasGrid"></div>
     <div class="canvas-inner" id="canvasInner">
 
-      <section class="frame frame-c1" id="frame-c1" style="width:1180px;height:560px;">
+                        <section class="frame frame-c1" id="frame-c1" style="width:1180px;height:560px;">
         <span class="frame-tab">C1 &middot; System Context</span>
         <svg class="connectors" id="conn-c1"></svg>
 
         <div class="node node-person" id="c1-customer" style="left:40px;top:220px;width:170px;height:110px;" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="node-kind">Person</span>
-          <span class="node-icon">&#9679;</span>
+          <svg class="node-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           <span class="node-title">Customer</span>
           <span class="node-sub">External actor</span>
         </div>
@@ -101,13 +101,13 @@
 
         <div class="node node-person" id="c1-analyst" style="left:960px;top:300px;width:180px;height:120px;" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="node-kind">Person</span>
-          <span class="node-icon">&#9679;</span>
+          <svg class="node-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           <span class="node-title">Fraud Ops Analyst</span>
           <span class="node-sub">Internal actor</span>
         </div>
       </section>
 
-      <section class="frame frame-c2" id="frame-c2" style="width:1360px;height:620px;">
+                        <section class="frame frame-c2" id="frame-c2" style="width:1360px;height:620px;">
         <span class="frame-tab">C2 &middot; Container — Fraud Decisioning System</span>
         <svg class="connectors" id="conn-c2"></svg>
 
@@ -161,7 +161,7 @@
         </div>
       </section>
 
-      <section class="frame frame-c3" id="frame-c3" style="width:1300px;height:300px;">
+                        <section class="frame frame-c3" id="frame-c3" style="width:1300px;height:300px;">
         <span class="frame-tab">C3 &middot; Component — Decision Engine</span>
         <svg class="connectors" id="conn-c3"></svg>
 
@@ -196,7 +196,7 @@
         </div>
       </section>
 
-      <section class="frame frame-process" id="frame-process">
+                        <section class="frame frame-process" id="frame-process">
         <span class="frame-tab">Process View &middot; Order to Decision</span>
 
         <div class="swimlanes">
@@ -251,7 +251,7 @@
         </div>
       </section>
 
-      <section class="frame frame-signals" id="frame-signals">
+                        <section class="frame frame-signals" id="frame-signals">
         <span class="frame-tab">Reference &middot; Risk Signal Taxonomy</span>
         <div class="signal-grid">
           <div class="signal-card" id="sig-device" tabindex="0" role="button" aria-haspopup="dialog">
@@ -297,7 +297,7 @@
         </div>
       </section>
 
-      <section class="frame frame-experiment" id="frame-experiment">
+                        <section class="frame frame-experiment" id="frame-experiment">
         <span class="frame-tab">Product Experiment</span>
         <div class="sticky-note">
           <span class="sticky-eyebrow">Hypothesis</span>
@@ -312,17 +312,25 @@
         </div>
       </section>
 
-    </div>
-  </main>
+    </div>   </main>
 
-  <div class="zoom-controls">
+    <div class="zoom-controls">
     <button id="zoomOut" aria-label="Zoom out">&minus;</button>
     <span id="zoomLevel">100%</span>
     <button id="zoomIn" aria-label="Zoom in">+</button>
     <button id="zoomReset" class="zoom-reset">Reset</button>
   </div>
 
-  <aside class="legend-panel" id="legendPanel" aria-hidden="true">
+    <nav class="mobile-frame-bar" aria-label="Jump to frame">
+    <button class="mobile-frame-btn" data-target="frame-c1">C1</button>
+    <button class="mobile-frame-btn" data-target="frame-c2">C2</button>
+    <button class="mobile-frame-btn" data-target="frame-c3">C3</button>
+    <button class="mobile-frame-btn" data-target="frame-process">Process</button>
+    <button class="mobile-frame-btn" data-target="frame-signals">Signals</button>
+    <button class="mobile-frame-btn" data-target="frame-experiment">Experiment</button>
+  </nav>
+
+    <aside class="legend-panel" id="legendPanel" aria-hidden="true">
     <p class="legend-heading">C4 Notation</p>
     <div class="legend-row"><span class="swatch swatch-person"></span> Person</div>
     <div class="legend-row"><span class="swatch swatch-system"></span> Software System</div>
@@ -332,7 +340,7 @@
     <div class="legend-row"><span class="swatch swatch-focal"></span> In scope for this role</div>
   </aside>
 
-  <aside class="detail-panel" id="detailPanel" aria-hidden="true">
+    <aside class="detail-panel" id="detailPanel" aria-hidden="true">
     <button class="detail-close" id="detailClose" aria-label="Close">&times;</button>
     <span class="detail-kind" id="detailKind">SYSTEM DETAIL</span>
     <h2 class="detail-title" id="detailTitle">Select a node</h2>
@@ -340,8 +348,7 @@
     <ul class="detail-list" id="detailList"></ul>
   </aside>
 
-</div>
-
+</div> 
 <script src="script.js"></script>
 </body>
 </html>
