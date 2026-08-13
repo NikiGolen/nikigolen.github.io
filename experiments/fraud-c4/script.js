@@ -300,7 +300,6 @@ function applyTransform(){
 
 function setZoom(newScale, pivotX, pivotY){
   newScale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, newScale));
-  // keep the point under the cursor stable while zooming
   const rect = viewport.getBoundingClientRect();
   const px = pivotX !== undefined ? pivotX - rect.left : rect.width / 2;
   const py = pivotY !== undefined ? pivotY - rect.top : rect.height / 2;
@@ -334,19 +333,39 @@ window.addEventListener("mouseup", () => {
 });
 
 let touchStartX = 0, touchStartY = 0;
+let pinchStartDist = 0, pinchStartScale = 1;
+
+function touchDist(touches){
+  const dx = touches[0].clientX - touches[1].clientX;
+  const dy = touches[0].clientY - touches[1].clientY;
+  return Math.hypot(dx, dy);
+}
+
 viewport.addEventListener("touchstart", (e) => {
-  if (e.touches.length !== 1) return;
-  if (e.target.closest(".node, .step-card, .branch")) return;
-  touchStartX = e.touches[0].clientX;
-  touchStartY = e.touches[0].clientY;
-  txStart = tx; tyStart = ty;
+  if (e.target.closest(".node, .step-card, .branch, .signal-card")) return;
+  if (e.touches.length === 2){
+    pinchStartDist = touchDist(e.touches);
+    pinchStartScale = scale;
+  } else if (e.touches.length === 1){
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    txStart = tx; tyStart = ty;
+  }
 }, { passive: true });
+
 viewport.addEventListener("touchmove", (e) => {
-  if (e.touches.length !== 1) return;
-  tx = txStart + (e.touches[0].clientX - touchStartX);
-  ty = tyStart + (e.touches[0].clientY - touchStartY);
-  applyTransform();
-}, { passive: true });
+  if (e.touches.length === 2){
+    e.preventDefault();
+    const dist = touchDist(e.touches);
+    const midX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+    const midY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+    setZoom(pinchStartScale * (dist / pinchStartDist), midX, midY);
+  } else if (e.touches.length === 1){
+    tx = txStart + (e.touches[0].clientX - touchStartX);
+    ty = tyStart + (e.touches[0].clientY - touchStartY);
+    applyTransform();
+  }
+}, { passive: false });
 
 viewport.addEventListener("wheel", (e) => {
   e.preventDefault();
@@ -420,6 +439,16 @@ function drawConnectors(frameId, edges){
       text.setAttribute("text-anchor", "middle");
       text.textContent = edge.label;
       svg.appendChild(text);
+
+      const bbox = text.getBBox();
+      const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      rect.setAttribute("class", "label-bg");
+      rect.setAttribute("x", bbox.x - 5);
+      rect.setAttribute("y", bbox.y - 3);
+      rect.setAttribute("width", bbox.width + 10);
+      rect.setAttribute("height", bbox.height + 6);
+      rect.setAttribute("rx", 4);
+      svg.insertBefore(rect, text);
     }
   });
 }
@@ -474,13 +503,13 @@ document.querySelectorAll("[id]").forEach((el) => {
 });
 
 const navButtons = document.querySelectorAll(".frame-nav-btn");
+const mobileNavButtons = document.querySelectorAll(".mobile-frame-btn");
 
 function goToFrame(frameId){
   const frame = document.getElementById(frameId);
   if (!frame) return;
   const rect = viewport.getBoundingClientRect();
 
-  // frame position in canvasInner's local (unscaled) space
   const targetScale = Math.min(1, MAX_SCALE);
   const localLeft = frame.offsetLeft;
   const localTop = frame.offsetTop;
@@ -493,11 +522,17 @@ function goToFrame(frameId){
   applyTransform();
 
   navButtons.forEach((b) => b.classList.remove("is-active"));
+  mobileNavButtons.forEach((b) => b.classList.remove("is-active"));
   const activeBtn = document.querySelector(`.frame-nav-btn[data-target="${frameId}"]`);
   if (activeBtn) activeBtn.classList.add("is-active");
+  const activeMobileBtn = document.querySelector(`.mobile-frame-btn[data-target="${frameId}"]`);
+  if (activeMobileBtn) activeMobileBtn.classList.add("is-active");
 }
 
 navButtons.forEach((btn) => {
+  btn.addEventListener("click", () => goToFrame(btn.dataset.target));
+});
+mobileNavButtons.forEach((btn) => {
   btn.addEventListener("click", () => goToFrame(btn.dataset.target));
 });
 
